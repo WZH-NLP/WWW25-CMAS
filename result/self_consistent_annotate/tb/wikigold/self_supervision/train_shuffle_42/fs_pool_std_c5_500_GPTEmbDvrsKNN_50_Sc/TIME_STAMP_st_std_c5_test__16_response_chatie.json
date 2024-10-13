@@ -1,0 +1,90 @@
+[
+    {
+        "idx": 0,
+        "sentence": "UK Edition came with the OSC-DIS video , and most of the tracks were re-engineered .",
+        "label": "{'OSC-DIS': 'Miscellaneous', 'UK': 'Location'}",
+        "response1": "['Organization']",
+        "qa": "[{'question': 'According to the sentence above, please output the entities of ‘Organization’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"UK Edition\": \"Organization\"}, {\"OSC-DIS\": \"Organization\"}]'}]",
+        "prediction": "{'UK Edition': 'Organization', 'OSC-DIS': 'Organization'}"
+    },
+    {
+        "idx": 1,
+        "sentence": "During this time Couch 's Division was detached from the Army and was occupied with guarding the fords on the Potomac .",
+        "label": "{'Potomac': 'Location', \"Couch 's Division\": 'Organization', 'Army': 'Organization'}",
+        "response1": "['Organization', 'Location']",
+        "qa": "[{'question': 'According to the sentence above, please output the entities of ‘Organization’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"Couch \\'s Division\": \"Organization\"}, {\"Army\": \"Organization\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Location’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"Potomac\": \"Location\"}]'}]",
+        "prediction": "{\"Couch 's Division\": 'Organization', 'Army': 'Organization', 'Potomac': 'Location'}"
+    },
+    {
+        "idx": 2,
+        "sentence": "At the Battle of Gettysburg in July , it helped defend the left flank of the Union army .",
+        "label": "{'Union': 'Organization', 'Battle of Gettysburg': 'Miscellaneous'}",
+        "response1": "['Location', 'Miscellaneous']",
+        "qa": "[{'question': 'According to the sentence above, please output the entities of ‘Location’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"Gettysburg\": \"Location\"}, {\"Union army\": \"Location\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Miscellaneous’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[]'}]",
+        "prediction": "{'Gettysburg': 'Location', 'Union army': 'Location'}"
+    },
+    {
+        "idx": 3,
+        "sentence": "The 139th supported Sheridan in the Appomattox Campaign and fought in the Battle of Sayler 's Creek .",
+        "label": "{'139th': 'Organization', 'Appomattox Campaign': 'Miscellaneous', \"Battle of Sayler 's Creek\": 'Miscellaneous', 'Sheridan': 'Person'}",
+        "response1": "['Organization', 'Person', 'Location', 'Miscellaneous']",
+        "qa": "[{'question': 'According to the sentence above, please output the entities of ‘Organization’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"139th\": \"Organization\"}, {\"Sheridan\": \"Organization\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Person’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"Sheridan\": \"Person\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Location’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"Appomattox\": \"Location\"}, {\"Sayler\\'s Creek\": \"Location\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Miscellaneous’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[]'}]",
+        "prediction": "{'139th': 'Organization', 'Sheridan': 'Person', 'Appomattox': 'Location', \"Sayler's Creek\": 'Location'}"
+    },
+    {
+        "idx": 4,
+        "sentence": "Two cars were demolished and the two following cars were telescoped .",
+        "label": "{}",
+        "response1": "['Miscellaneous']",
+        "qa": "[{'question': 'According to the sentence above, please output the entities of ‘Miscellaneous’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"Two cars\": \"Miscellaneous\"}, {\"two following cars\": \"Miscellaneous\"}]'}]",
+        "prediction": "{'Two cars': 'Miscellaneous', 'two following cars': 'Miscellaneous'}"
+    },
+    {
+        "idx": 5,
+        "sentence": "The second car of the West Jersey train was also carried into the ditch , the third and fourth cars being telescoped .",
+        "label": "{'West Jersey': 'Location'}",
+        "response1": "['Location']",
+        "qa": "[{'question': 'According to the sentence above, please output the entities of ‘Location’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"West Jersey\": \"Location\"}]'}]",
+        "prediction": "{'West Jersey': 'Location'}"
+    },
+    {
+        "idx": 6,
+        "sentence": "As onlookers watched through the night , the mangled and burned bodies of the dead were carried from the wreckage which trapped them and laid side by side on the gravel bank near the track , with no other covering than the few newspapers gathered from the passengers .",
+        "label": "{}",
+        "response1": "['Person', 'Location', 'Miscellaneous']",
+        "qa": "[{'question': 'According to the sentence above, please output the entities of ‘Person’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"onlookers\": \"Person\"}, {\"passengers\": \"Person\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Location’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"gravel bank\": \"Location\"}, {\"track\": \"Location\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Miscellaneous’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"wreckage\": \"Miscellaneous\"}, {\"newspapers\": \"Miscellaneous\"}]'}]",
+        "prediction": "{'onlookers': 'Person', 'passengers': 'Person', 'gravel bank': 'Location', 'track': 'Location', 'wreckage': 'Miscellaneous', 'newspapers': 'Miscellaneous'}"
+    },
+    {
+        "idx": 7,
+        "sentence": "James W. Hoyt , Secretary of the New Jersey Department of Public Safety , immediately upon learning of the extent of the accident , telegraphed for the Philadelphia Medical Emergency Corps , fifteen of whom responded , and hurried to Atlantic City on a special train which left Philadelphia at 10:45 pm .",
+        "label": "{'Philadelphia': 'Location', 'Atlantic City': 'Location', 'James W. Hoyt': 'Person', 'Philadelphia Medical Emergency Corps': 'Organization', 'New Jersey Department of Public Safety': 'Organization'}",
+        "response1": "['Person', 'Organization', 'Location', 'Miscellaneous']",
+        "qa": "[{'question': 'According to the sentence above, please output the entities of ‘Person’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"James W. Hoyt\": \"Person\"}, {\"Philadelphia Medical Emergency Corps\": \"Organization\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Organization’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"New Jersey Department of Public Safety\": \"Organization\"}, {\"Philadelphia Medical Emergency Corps\": \"Organization\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Location’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"Atlantic City\": \"Location\"}, {\"Philadelphia\": \"Location\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Miscellaneous’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[]'}]",
+        "prediction": "{'James W. Hoyt': 'Person', 'Philadelphia Medical Emergency Corps': 'Organization', 'New Jersey Department of Public Safety': 'Organization', 'Atlantic City': 'Location', 'Philadelphia': 'Location'}"
+    },
+    {
+        "idx": 8,
+        "sentence": "He went directly into the block tower and questioned operator George F. Hauser. Houser told him that he thought the excursion train had time to cross the tracks of the Reading before the express got there and he set the \" clear \" signal for the West Jersey train .",
+        "label": "{'West Jersey': 'Location', 'George F. Hauser. Houser': 'Person', 'Reading': 'Location'}",
+        "response1": "['Person', 'Person', 'Organization', 'Location']",
+        "qa": "[{'question': 'According to the sentence above, please output the entities of ‘Person’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"George F. Hauser\": \"Person\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Person’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"George F. Hauser\": \"Person\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Organization’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"Reading\": \"Organization\"}, {\"West Jersey\": \"Organization\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Location’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[]'}]",
+        "prediction": "{'George F. Hauser': 'Person', 'Reading': 'Organization', 'West Jersey': 'Organization'}"
+    },
+    {
+        "idx": 9,
+        "sentence": "Before Hauser could make a further explanation to the coroner he received an order from the railroad officials to say nothing .",
+        "label": "{'Hauser': 'Person'}",
+        "response1": "['Person', 'Organization']",
+        "qa": "[{'question': 'According to the sentence above, please output the entities of ‘Person’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"Hauser\": \"Person\"}, {\"coroner\": \"Person\"}, {\"railroad officials\": \"Organization\"}]'}, {'question': 'According to the sentence above, please output the entities of ‘Organization’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"railroad officials\": \"Organization\"}]'}]",
+        "prediction": "{'Hauser': 'Person', 'coroner': 'Person', 'railroad officials': 'Organization'}"
+    },
+    {
+        "idx": 10,
+        "sentence": "His reputation was that of an experienced engineer and a man of exceptionally high moral character , and not of a reckless or careless disposition .",
+        "label": "{}",
+        "response1": "['Person']",
+        "qa": "[{'question': 'According to the sentence above, please output the entities of ‘Person’ in the the following JSON format: [{\\\\\"Entity Name\\\\\": \\\\\"Entity Label\\\\\"}].', 'answer': '[{\"experienced engineer\": \"Person\"}, {\"man\": \"Person\"}]'}]",
+        "prediction": "{'experienced engineer': 'Person', 'man': 'Person'}"
+    }
+]

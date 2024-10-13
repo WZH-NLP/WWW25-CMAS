@@ -1,0 +1,5 @@
+Given target sentence : <target_sentence>
+Given entity types that may be included in this target sentence <ner_type>
+Here provide some examples and the corresponding entity labels.
+Based on the entity labels in the target sentence, please predict the helpfulness scores of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Simply provide answer in the following format: [{"Sentence id": "helpfulness score"}]

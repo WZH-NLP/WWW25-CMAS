@@ -1,0 +1,6 @@
+Type,Gold count,Gold rate,Pred count,Pred rate,Correct count,Prec,Rec,F1
+Chemical,25,5.23,7,2.69,4,57.14,16.00,25.00
+Organism,164,34.31,64,24.62,40,62.50,24.39,35.09
+Protein,286,59.83,167,64.23,134,80.24,46.85,59.16
+Regulon-operon,3,0.63,22,8.46,2,9.09,66.67,16.00
+ToTal,478,100,260,100,180,69.23,37.66,48.78

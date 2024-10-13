@@ -1,0 +1,3 @@
+Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]

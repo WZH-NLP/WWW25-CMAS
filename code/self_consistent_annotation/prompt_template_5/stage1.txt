@@ -1,0 +1,4 @@
+Given target sentence : <target_sentence>
+Given entity label set: <ner_list>
+Recognize the named entities for the target sentence.
+Simply provide answer in the following format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []

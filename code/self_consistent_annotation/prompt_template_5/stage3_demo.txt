@@ -1,0 +1,4 @@
+<split_signal>
+Sentence: <sentence_str>
+Label: <label_str>
+Helpfulness score: <score<sentence_id>>

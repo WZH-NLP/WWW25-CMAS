@@ -1,0 +1,7 @@
+Given target sentence : <target_sentence>
+Given entity label set: <ner_list>
+Another agent identified the following named entities in the target sentence：<ner_label>
+Here provide some examples and the corresponding entity labels.
+The helpfulness scores of each sentence are also provided, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence.
+Based on the above information, recognize the named entities for the target sentence.
+Simply provide answer in the following format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []

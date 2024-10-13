@@ -1,0 +1,2 @@
+Given sentence: "<target_sentence>" The known entity types are: <ner_list>. Please answer: What types of entities are included in this sentence?
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]

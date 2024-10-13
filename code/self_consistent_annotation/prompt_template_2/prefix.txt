@@ -1,0 +1,33 @@
+"""Provide complete code. Do not delete anything!"""
+class Entity:
+    def __init__(self, name: str):
+        self.name = name
+
+class Person(Entity):
+    """Person entities refers to an individual, human being, or specific person. It can include names, titles, or any reference to a particular person."""
+    def __init__(self, name: str):
+        super().__init__(name=name)
+
+
+class Organization(Entity):
+    """Organization entities refer to a named group, company, or institution. It can be a business, government agency, non-profit organization, or any other group of people with a particular purpose or function."""
+    def __init__(self, name: str):
+        super().__init__(name=name)
+
+class Location(Entity):
+    """Location entities refer to specific places or geographical locations mentioned in the text. These locations can be cities, streets, parks, states, countries, or any other geographical entities."""
+    def __init__(self, name: str):
+        super().__init__(name=name)
+
+class Miscellaneous(Entity):
+    """Miscellaneous entities encompass various entities that do not fit into the categories of 'Organization', 'Person', or 'Location'. These entities can include years, events, objects, concepts, or other miscellaneous items."""
+    def __init__(self, name: str):
+        super().__init__(name=name)
+
+helpfulness = []
+target_sentence="<-target-sentence->"
+
+def predict_helpfulness(score: int):
+    """Predict the helpfulness score, which indicates the degree to which providing the current sentence can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful."""
+    helpfulness.append(score)
+

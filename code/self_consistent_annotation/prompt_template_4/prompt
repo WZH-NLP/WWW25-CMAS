@@ -1,0 +1,79 @@
+Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : '( 52.76 / 53.18 )'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+----------------------
+Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]
+Sentence: 1. Ilke Wyludda ( Germany ) 66.60 metres
+Answer: [{'Ilke Wyludda': 'Person'}, {'Germany': 'Location'}]
+Sentence: OAKLAND 65 72 .474 12 1/2
+Answer: [{'OAKLAND': 'Location'}]
+Sentence: Riley ( Australia ) 64 71 , Carl Mason 69 66 , Barry Lane
+Answer: [{'Riley': 'Person'}, {'Australia': 'Location'}, {'Carl Mason': 'Person'}, {'Barry Lane': 'Person'}]
+Sentence: 6. Chandra Sturrup ( Bahamas ) 11.26
+Answer: [{'Chandra Sturrup': 'Person'}, {'Bahamas': 'Location'}]
+Sentence: Allensbach Aug 21 37.2 32.8 8.0 13.0 5.6
+Answer: [{'Allensbach': 'Location'}]
+Sentence: 23. Poland 8.12
+Answer: [{'Poland': 'Location'}]
+Sentence: SEATTLE 70 64 .522 6
+Answer: [{'SEATTLE': 'Location'}]
+Sentence: KANSAS CITY 58 70 .453 18 1/2
+Answer: [{'KANSAS CITY': 'Location'}]
+Sentence: 9. Jason Rouser ( U.S. ) 46.11
+Answer: [{'Jason Rouser': 'Person'}, {'U.S.': 'Location'}]
+Sentence: The Nasdaq composite index closed 3.53 points lower Friday at 1,141.50 .
+Answer: [{'Nasdaq': 'Organization'}]
+Sentence: 26. Finland 8.09
+Answer: [{'Finland': 'Location'}]
+Sentence: 1. Virna De Angeli ( Italy ) 55.66
+Answer: [{'Virna De Angeli': 'Person'}, {'Italy': 'Location'}]
+Sentence: CALIFORNIA 58 68 .460 14 1/2
+Answer: [{'CALIFORNIA': 'Location'}]
+Sentence: HOUSTON 69 61 .531 -
+Answer: [{'HOUSTON': 'Location'}]
+Sentence: 35. Hungary 7.98
+Answer: [{'Hungary': 'Location'}]
+Sentence: 2. Anthony Washington ( U.S. ) 68.44
+Answer: [{'Anthony Washington': 'Person'}, {'U.S.': 'Location'}]
+----------------------------------------------
+Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : '( 52.76 / 53.18 )'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: 1. Ilke Wyludda ( Germany ) 66.60 metres
+Answer: [{'Ilke Wyludda': 'Person'}, {'Germany': 'Location'}]
+Sentence: OAKLAND 65 72 .474 12 1/2
+Answer: [{'OAKLAND': 'Location'}]
+Sentence: Riley ( Australia ) 64 71 , Carl Mason 69 66 , Barry Lane
+Answer: [{'Riley': 'Person'}, {'Australia': 'Location'}, {'Carl Mason': 'Person'}, {'Barry Lane': 'Person'}]
+Sentence: 6. Chandra Sturrup ( Bahamas ) 11.26
+Answer: [{'Chandra Sturrup': 'Person'}, {'Bahamas': 'Location'}]
+Sentence: Allensbach Aug 21 37.2 32.8 8.0 13.0 5.6
+Answer: [{'Allensbach': 'Location'}]
+Sentence: 23. Poland 8.12
+Answer: [{'Poland': 'Location'}]
+Sentence: SEATTLE 70 64 .522 6
+Answer: [{'SEATTLE': 'Location'}]
+Sentence: KANSAS CITY 58 70 .453 18 1/2
+Answer: [{'KANSAS CITY': 'Location'}]
+Sentence: 9. Jason Rouser ( U.S. ) 46.11
+Answer: [{'Jason Rouser': 'Person'}, {'U.S.': 'Location'}]
+Sentence: The Nasdaq composite index closed 3.53 points lower Friday at 1,141.50 .
+Answer: [{'Nasdaq': 'Organization'}]
+Sentence: 26. Finland 8.09
+Answer: [{'Finland': 'Location'}]
+Sentence: 1. Virna De Angeli ( Italy ) 55.66
+Answer: [{'Virna De Angeli': 'Person'}, {'Italy': 'Location'}]
+Sentence: CALIFORNIA 58 68 .460 14 1/2
+Answer: [{'CALIFORNIA': 'Location'}]
+Sentence: HOUSTON 69 61 .531 -
+Answer: [{'HOUSTON': 'Location'}]
+Sentence: 35. Hungary 7.98
+Answer: [{'Hungary': 'Location'}]
+Sentence: 2. Anthony Washington ( U.S. ) 68.44
+Answer: [{'Anthony Washington': 'Person'}, {'U.S.': 'Location'}]
+Sentence: ( 52.76 / 53.18 )
+Answer:

@@ -1,0 +1,2269 @@
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'UK Edition came with the OSC-DIS video , and most of the tracks were re-engineered .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  [Location, Miscellaneous]
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: His parents were encouraged by a friend to develop the child 's musical talents and he studied classical piano in the United States .
+Answer: [{'United States': 'Location'}]
+Sentence: In this , he is often cited as being influenced by pianist Eddy Duchin .
+Answer: [{'Eddy Duchin': 'Person'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: The album 's title is an amalgamation of the words ' digital ' and ' analogue ' , two of the principal technologies that have been used in sound recording .
+Answer: [{'digital': 'Miscellaneous'}, {'analogue': 'Miscellaneous'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+Answer: [{'Dark Room Notes': 'Organization'}, {'Dublin': 'Location'}, {'Ireland': 'Location'}]
+Sentence: Darkness Death Doom is the sixth album by Runemagick .
+Answer: [{'Runemagick': 'Organization'}]
+Sentence: After his naval discharge , Langejans took a job at Meyer Music in Holland , where he was trained in the intricacies of instrument repair and electronics .
+Answer: [{'Langejans': 'Person'}, {'Meyer Music': 'Organization'}, {'Holland': 'Location'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+Answer: [{'Matt Wachter': 'Person'}]
+Sentence: In 1971 , he began to design and build his own guitars , originally bearing the name Del's .
+Answer: [{"Del's": 'Organization'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+Sentence: As a young pianist , he toured Europe performing in many capitals .
+Answer: [{'Europe': 'Location'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: The Langejans Dualette is a two sided guitar which was custom made for Thom Bresh .
+Answer: [{'Langejans Dualette': 'Miscellaneous'}, {'Thom Bresh': 'Person'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 4},
+    {"Sentence2": 3},
+    {"Sentence3": 3},
+    {"Sentence4": 2},
+    {"Sentence5": 3},
+    {"Sentence6": 5},
+    {"Sentence7": 4},
+    {"Sentence8": 5},
+    {"Sentence9": 5},
+    {"Sentence10": 1},
+    {"Sentence11": 3},
+    {"Sentence12": 4},
+    {"Sentence13": 5},
+    {"Sentence14": 4},
+    {"Sentence15": 4},
+    {"Sentence16": 3}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'UK Edition came with the OSC-DIS video , and most of the tracks were re-engineered .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: His parents were encouraged by a friend to develop the child 's musical talents and he studied classical piano in the United States .
+Answer: [{'United States': 'Location'}]
+Sentence: In this , he is often cited as being influenced by pianist Eddy Duchin .
+Answer: [{'Eddy Duchin': 'Person'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: The album 's title is an amalgamation of the words ' digital ' and ' analogue ' , two of the principal technologies that have been used in sound recording .
+Answer: [{'digital': 'Miscellaneous'}, {'analogue': 'Miscellaneous'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+Answer: [{'Dark Room Notes': 'Organization'}, {'Dublin': 'Location'}, {'Ireland': 'Location'}]
+Sentence: Darkness Death Doom is the sixth album by Runemagick .
+Answer: [{'Runemagick': 'Organization'}]
+Sentence: After his naval discharge , Langejans took a job at Meyer Music in Holland , where he was trained in the intricacies of instrument repair and electronics .
+Answer: [{'Langejans': 'Person'}, {'Meyer Music': 'Organization'}, {'Holland': 'Location'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+Answer: [{'Matt Wachter': 'Person'}]
+Sentence: In 1971 , he began to design and build his own guitars , originally bearing the name Del's .
+Answer: [{"Del's": 'Organization'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+Sentence: As a young pianist , he toured Europe performing in many capitals .
+Answer: [{'Europe': 'Location'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: The Langejans Dualette is a two sided guitar which was custom made for Thom Bresh .
+Answer: [{'Langejans Dualette': 'Miscellaneous'}, {'Thom Bresh': 'Person'}]
+Sentence: UK Edition came with the OSC-DIS video , and most of the tracks were re-engineered .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"UK Edition": "Miscellaneous"}, {"OSC-DIS": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'During this time Couch 's Division was detached from the Army and was occupied with guarding the fords on the Potomac .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  [Organization, Location]
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: The operation moved from Barrack Street to 340 Hay Street just after the purchase by the VBN in 1963 .
+Answer: [{'Barrack Street': 'Location'}, {'340 Hay Street': 'Location'}, {'VBN': 'Organization'}]
+Sentence: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+Answer: [{'MAAA': 'Organization'}]
+Sentence: Throughout the spring and into early summer of 1864 , the 139th fought in Grant 's Overland Campaign and the early stages of the Siege of Petersburg .
+Answer: [{'Grant': 'Person'}, {'Overland Campaign': 'Miscellaneous'}, {'Siege of Petersburg': 'Miscellaneous'}]
+Sentence: The 139th was transferred in October 1862 to the VI Corps .
+Answer: [{'VI Corps': 'Organization'}]
+Sentence: By December 1864 , they were back in the siege lines of Petersburg .
+Answer: [{'Petersburg': 'Location'}]
+Sentence: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+Answer: [{'65th Air Division': 'Organization'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: Fourth Air Force , 27 March 1943 ; Army Service Forces , 6 May 1943 ; Eighth Air Force , 2 June 1943 ; VIII Fighter Command , 4 June 1943 ; 2 Bombardment ( later , 2 Air ) Division , 15 September 1944 ; 3 Air Division , 1 June 1945 -- 21 November 1945 .
+Answer: [{'Fourth Air Force': 'Organization'}, {'Army Service Forces': 'Organization'}, {'Eighth Air Force': 'Organization'}, {'VIII Fighter Command': 'Organization'}, {'2 Bombardment ( later , 2 Air ) Division': 'Organization'}, {'3 Air Division': 'Organization'}]
+Sentence: Meanwhile , the area around the reservoir had come to be known as Lincoln Reservoir Park .
+Answer: [{'Lincoln Reservoir Park': 'Location'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: Played defensive end for the Patriots in 1971 .
+Answer: [{'Patriots': 'Organization'}]
+Sentence: Determinated to bar the expedition 's road , Sarraounia wrote to Voulet a provocative letter full of insults ; the French took up the challenge , and on April 15 left the camp marching towards the villages of Lougou and Tougana , where Sarraounia had concentrated her forces .
+Answer: [{'Sarraounia': 'Person'}, {'Voulet': 'Person'}, {'French': 'Miscellaneous'}, {'April 15': 'Miscellaneous'}, {'Lougou': 'Location'}, {'Tougana': 'Location'}]
+Sentence: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+Answer: [{'Victoria': 'Location'}]
+Sentence: The Netherlands East Indies government operated from Australia during the war .
+Answer: [{'Australia': 'Location'}]
+Sentence: The circuit was inaugurated on August , 7 , 1948 .
+Answer: [{'August': 'Miscellaneous'}]
+Sentence: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+Answer: [{'Williamsport': 'Location'}]
+
+--------------------------------------------------
+ANSWER   :  ```json
+[
+    {"Sentence1": 4},
+    {"Sentence2": 1},
+    {"Sentence3": 3},
+    {"Sentence4": 3},
+    {"Sentence5": 3},
+    {"Sentence6": 3},
+    {"Sentence7": 4},
+    {"Sentence8": 5},
+    {"Sentence9": 4},
+    {"Sentence10": 2},
+    {"Sentence11": 3},
+    {"Sentence12": 4},
+    {"Sentence13": 4},
+    {"Sentence14": 4},
+    {"Sentence15": 2},
+    {"Sentence16": 3}
+]
+```
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'During this time Couch 's Division was detached from the Army and was occupied with guarding the fords on the Potomac .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: The operation moved from Barrack Street to 340 Hay Street just after the purchase by the VBN in 1963 .
+Answer: [{'Barrack Street': 'Location'}, {'340 Hay Street': 'Location'}, {'VBN': 'Organization'}]
+Sentence: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+Answer: [{'MAAA': 'Organization'}]
+Sentence: Throughout the spring and into early summer of 1864 , the 139th fought in Grant 's Overland Campaign and the early stages of the Siege of Petersburg .
+Answer: [{'Grant': 'Person'}, {'Overland Campaign': 'Miscellaneous'}, {'Siege of Petersburg': 'Miscellaneous'}]
+Sentence: The 139th was transferred in October 1862 to the VI Corps .
+Answer: [{'VI Corps': 'Organization'}]
+Sentence: By December 1864 , they were back in the siege lines of Petersburg .
+Answer: [{'Petersburg': 'Location'}]
+Sentence: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+Answer: [{'65th Air Division': 'Organization'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: Fourth Air Force , 27 March 1943 ; Army Service Forces , 6 May 1943 ; Eighth Air Force , 2 June 1943 ; VIII Fighter Command , 4 June 1943 ; 2 Bombardment ( later , 2 Air ) Division , 15 September 1944 ; 3 Air Division , 1 June 1945 -- 21 November 1945 .
+Answer: [{'Fourth Air Force': 'Organization'}, {'Army Service Forces': 'Organization'}, {'Eighth Air Force': 'Organization'}, {'VIII Fighter Command': 'Organization'}, {'2 Bombardment ( later , 2 Air ) Division': 'Organization'}, {'3 Air Division': 'Organization'}]
+Sentence: Meanwhile , the area around the reservoir had come to be known as Lincoln Reservoir Park .
+Answer: [{'Lincoln Reservoir Park': 'Location'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: Played defensive end for the Patriots in 1971 .
+Answer: [{'Patriots': 'Organization'}]
+Sentence: Determinated to bar the expedition 's road , Sarraounia wrote to Voulet a provocative letter full of insults ; the French took up the challenge , and on April 15 left the camp marching towards the villages of Lougou and Tougana , where Sarraounia had concentrated her forces .
+Answer: [{'Sarraounia': 'Person'}, {'Voulet': 'Person'}, {'French': 'Miscellaneous'}, {'April 15': 'Miscellaneous'}, {'Lougou': 'Location'}, {'Tougana': 'Location'}]
+Sentence: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+Answer: [{'Victoria': 'Location'}]
+Sentence: The Netherlands East Indies government operated from Australia during the war .
+Answer: [{'Australia': 'Location'}]
+Sentence: The circuit was inaugurated on August , 7 , 1948 .
+Answer: [{'August': 'Miscellaneous'}]
+Sentence: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+Answer: [{'Williamsport': 'Location'}]
+Sentence: During this time Couch 's Division was detached from the Army and was occupied with guarding the fords on the Potomac .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Couch": "Person"}, {"Division": "Organization"}, {"Army": "Organization"}, {"fords on the Potomac": "Location"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'At the Battle of Gettysburg in July , it helped defend the left flank of the Union army .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Location', 'Miscellaneous']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: Friedrich the Great was Lessing 's patron , and he extended royal protection and sponsorship to Mendelssohn , as well .
+Answer: [{'Friedrich the Great': 'Person'}, {'Lessing': 'Person'}, {'Mendelssohn': 'Person'}]
+Sentence: After Diego Silang 's death , his wife , Josefa Gabriela , took over the revolt and fought courageously .
+Answer: [{'Diego Silang': 'Person'}, {'Josefa Gabriela': 'Person'}]
+Sentence: After leaving French Sudan in January 1899 , they ruthlessly subjected the native peoples , meeting little resistance .
+Answer: [{'French Sudan': 'Location'}]
+Sentence: Fourth Air Force , 27 March 1943 ; Army Service Forces , 6 May 1943 ; Eighth Air Force , 2 June 1943 ; VIII Fighter Command , 4 June 1943 ; 2 Bombardment ( later , 2 Air ) Division , 15 September 1944 ; 3 Air Division , 1 June 1945 -- 21 November 1945 .
+Answer: [{'Fourth Air Force': 'Organization'}, {'Army Service Forces': 'Organization'}, {'Eighth Air Force': 'Organization'}, {'VIII Fighter Command': 'Organization'}, {'2 Bombardment ( later , 2 Air ) Division': 'Organization'}, {'3 Air Division': 'Organization'}]
+Sentence: Meanwhile , the area around the reservoir had come to be known as Lincoln Reservoir Park .
+Answer: [{'Lincoln Reservoir Park': 'Location'}]
+Sentence: Paul Joalland called " one of the hottest moment of the campaign " .
+Answer: [{'Paul Joalland': 'Person'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+Answer: [{'21 february 2005': 'Miscellaneous'}]
+Sentence: The circuit was inaugurated on August , 7 , 1948 .
+Answer: [{'August': 'Miscellaneous'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+Answer: [{'65th Air Division': 'Organization'}]
+Sentence: Played defensive end for the Patriots in 1971 .
+Answer: [{'Patriots': 'Organization'}]
+Sentence: He received his doctorate in 1862 , and subsequently practiced medicine in Berlin and Würzburg .
+Answer: [{'Berlin': 'Location'}, {'Würzburg': 'Location'}]
+Sentence: The 139th was transferred in October 1862 to the VI Corps .
+Answer: [{'VI Corps': 'Organization'}]
+Sentence: Its fighter squadrons flew air defense interceptions over Spanish airspace .
+Answer: [{'Spanish': 'Location'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 3},
+    {"Sentence2": 4},
+    {"Sentence3": 1},
+    {"Sentence4": 5},
+    {"Sentence5": 5},
+    {"Sentence6": 3},
+    {"Sentence7": 4},
+    {"Sentence8": 2},
+    {"Sentence9": 2},
+    {"Sentence10": 4},
+    {"Sentence11": 2},
+    {"Sentence12": 4},
+    {"Sentence13": 4},
+    {"Sentence14": 3},
+    {"Sentence15": 4},
+    {"Sentence16": 3}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'At the Battle of Gettysburg in July , it helped defend the left flank of the Union army .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Friedrich the Great was Lessing 's patron , and he extended royal protection and sponsorship to Mendelssohn , as well .
+Answer: [{'Friedrich the Great': 'Person'}, {'Lessing': 'Person'}, {'Mendelssohn': 'Person'}]
+Sentence: After Diego Silang 's death , his wife , Josefa Gabriela , took over the revolt and fought courageously .
+Answer: [{'Diego Silang': 'Person'}, {'Josefa Gabriela': 'Person'}]
+Sentence: After leaving French Sudan in January 1899 , they ruthlessly subjected the native peoples , meeting little resistance .
+Answer: [{'French Sudan': 'Location'}]
+Sentence: Fourth Air Force , 27 March 1943 ; Army Service Forces , 6 May 1943 ; Eighth Air Force , 2 June 1943 ; VIII Fighter Command , 4 June 1943 ; 2 Bombardment ( later , 2 Air ) Division , 15 September 1944 ; 3 Air Division , 1 June 1945 -- 21 November 1945 .
+Answer: [{'Fourth Air Force': 'Organization'}, {'Army Service Forces': 'Organization'}, {'Eighth Air Force': 'Organization'}, {'VIII Fighter Command': 'Organization'}, {'2 Bombardment ( later , 2 Air ) Division': 'Organization'}, {'3 Air Division': 'Organization'}]
+Sentence: Meanwhile , the area around the reservoir had come to be known as Lincoln Reservoir Park .
+Answer: [{'Lincoln Reservoir Park': 'Location'}]
+Sentence: Paul Joalland called " one of the hottest moment of the campaign " .
+Answer: [{'Paul Joalland': 'Person'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+Answer: [{'21 february 2005': 'Miscellaneous'}]
+Sentence: The circuit was inaugurated on August , 7 , 1948 .
+Answer: [{'August': 'Miscellaneous'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+Answer: [{'65th Air Division': 'Organization'}]
+Sentence: Played defensive end for the Patriots in 1971 .
+Answer: [{'Patriots': 'Organization'}]
+Sentence: He received his doctorate in 1862 , and subsequently practiced medicine in Berlin and Würzburg .
+Answer: [{'Berlin': 'Location'}, {'Würzburg': 'Location'}]
+Sentence: The 139th was transferred in October 1862 to the VI Corps .
+Answer: [{'VI Corps': 'Organization'}]
+Sentence: Its fighter squadrons flew air defense interceptions over Spanish airspace .
+Answer: [{'Spanish': 'Location'}]
+Sentence: At the Battle of Gettysburg in July , it helped defend the left flank of the Union army .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Gettysburg": "Location"}, {"Union army": "Organization"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The 139th supported Sheridan in the Appomattox Campaign and fought in the Battle of Sayler 's Creek .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Organization', 'Location']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: He was re-elected in the 1955 and 1959 elections and served in the legislature until his death in 1961 .
+Answer: [{'1955': 'Miscellaneous'}, {'1959': 'Miscellaneous'}, {'1961': 'Miscellaneous'}]
+Sentence: The 139th was transferred in October 1862 to the VI Corps .
+Answer: [{'VI Corps': 'Organization'}]
+Sentence: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+Answer: [{'Williamsport': 'Location'}]
+Sentence: By December 1864 , they were back in the siege lines of Petersburg .
+Answer: [{'Petersburg': 'Location'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: It was the 89th season of play for the Falcons .
+Answer: [{'Falcons': 'Organization'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+Answer: [{'Victoria': 'Location'}]
+Sentence: After leaving French Sudan in January 1899 , they ruthlessly subjected the native peoples , meeting little resistance .
+Answer: [{'French Sudan': 'Location'}]
+Sentence: Determinated to bar the expedition 's road , Sarraounia wrote to Voulet a provocative letter full of insults ; the French took up the challenge , and on April 15 left the camp marching towards the villages of Lougou and Tougana , where Sarraounia had concentrated her forces .
+Answer: [{'Sarraounia': 'Person'}, {'Voulet': 'Person'}, {'French': 'Miscellaneous'}, {'April 15': 'Miscellaneous'}, {'Lougou': 'Location'}, {'Tougana': 'Location'}]
+Sentence: Meanwhile , the area around the reservoir had come to be known as Lincoln Reservoir Park .
+Answer: [{'Lincoln Reservoir Park': 'Location'}]
+Sentence: Afterwards , Wang Shichong , seeing no other choice , surrendered Luoyang .
+Answer: [{'Wang Shichong': 'Person'}, {'Luoyang': 'Location'}]
+Sentence: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+Answer: [{'65th Air Division': 'Organization'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: After Diego Silang 's death , his wife , Josefa Gabriela , took over the revolt and fought courageously .
+Answer: [{'Diego Silang': 'Person'}, {'Josefa Gabriela': 'Person'}]
+
+--------------------------------------------------
+ANSWER   :  ```json
+[
+    {"Sentence1": 3},
+    {"Sentence2": 1},
+    {"Sentence3": 3},
+    {"Sentence4": 3},
+    {"Sentence5": 3},
+    {"Sentence6": 1},
+    {"Sentence7": 3},
+    {"Sentence8": 4},
+    {"Sentence9": 3},
+    {"Sentence10": 3},
+    {"Sentence11": 5},
+    {"Sentence12": 3},
+    {"Sentence13": 3},
+    {"Sentence14": 3},
+    {"Sentence15": 4},
+    {"Sentence16": 5}
+]
+```
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The 139th supported Sheridan in the Appomattox Campaign and fought in the Battle of Sayler 's Creek .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: He was re-elected in the 1955 and 1959 elections and served in the legislature until his death in 1961 .
+Answer: [{'1955': 'Miscellaneous'}, {'1959': 'Miscellaneous'}, {'1961': 'Miscellaneous'}]
+Sentence: The 139th was transferred in October 1862 to the VI Corps .
+Answer: [{'VI Corps': 'Organization'}]
+Sentence: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+Answer: [{'Williamsport': 'Location'}]
+Sentence: By December 1864 , they were back in the siege lines of Petersburg .
+Answer: [{'Petersburg': 'Location'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: It was the 89th season of play for the Falcons .
+Answer: [{'Falcons': 'Organization'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+Answer: [{'Victoria': 'Location'}]
+Sentence: After leaving French Sudan in January 1899 , they ruthlessly subjected the native peoples , meeting little resistance .
+Answer: [{'French Sudan': 'Location'}]
+Sentence: Determinated to bar the expedition 's road , Sarraounia wrote to Voulet a provocative letter full of insults ; the French took up the challenge , and on April 15 left the camp marching towards the villages of Lougou and Tougana , where Sarraounia had concentrated her forces .
+Answer: [{'Sarraounia': 'Person'}, {'Voulet': 'Person'}, {'French': 'Miscellaneous'}, {'April 15': 'Miscellaneous'}, {'Lougou': 'Location'}, {'Tougana': 'Location'}]
+Sentence: Meanwhile , the area around the reservoir had come to be known as Lincoln Reservoir Park .
+Answer: [{'Lincoln Reservoir Park': 'Location'}]
+Sentence: Afterwards , Wang Shichong , seeing no other choice , surrendered Luoyang .
+Answer: [{'Wang Shichong': 'Person'}, {'Luoyang': 'Location'}]
+Sentence: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+Answer: [{'65th Air Division': 'Organization'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: After Diego Silang 's death , his wife , Josefa Gabriela , took over the revolt and fought courageously .
+Answer: [{'Diego Silang': 'Person'}, {'Josefa Gabriela': 'Person'}]
+Sentence: The 139th supported Sheridan in the Appomattox Campaign and fought in the Battle of Sayler 's Creek .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Sheridan": "Person"}, {"Appomattox Campaign": "Miscellaneous"}, {"Battle of Sayler 's Creek": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Two cars were demolished and the two following cars were telescoped .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  [none]
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: F-94 Starfire , 1952 -- 1954 ; F-86 Sabre , 1953 -- 1954 .
+Answer: [{'F-94 Starfire': 'Miscellaneous'}, {'F-86 Sabre': 'Miscellaneous'}]
+Sentence: Although there were plans for races at Zandvoort before World War II , the first street race was held on June 3 , 1939 .
+Answer: [{'Zandvoort': 'Location'}, {'World War II': 'Miscellaneous'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+Sentence: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+Answer: [{'West Jersey': 'Location'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The second cancer went into remission .
+Answer: [{'cancer': 'Miscellaneous'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: MTV and ESPN thrived and gave rise to additional companion channels within a short time , while the CBS Cable channel folded after just over 14 months in operation .
+Answer: [{'MTV': 'Organization'}, {'ESPN': 'Organization'}, {'CBS Cable': 'Organization'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+Answer: [{'April 1999': 'Miscellaneous'}]
+
+--------------------------------------------------
+ANSWER   :  ```json
+[
+    {"Sentence1": 3},
+    {"Reason1": "The sentence contains specific model names of aircraft which fall under the 'Miscellaneous' category, providing some context for identifying miscellaneous entities in the target sentence."},
+    {"Sentence2": 4},
+    {"Reason2": "The sentence mentions a specific location (Zandvoort) and a historical event (World War II) which are relevant for identifying location and miscellaneous entities in the target sentence."},
+    {"Sentence3": 2},
+    {"Reason3": "The sentence provides information about flat cars on a railway in Maine, which is somewhat related to the location entity in the target sentence."},
+    {"Sentence4": 1},
+    {"Reason4": "The sentence talks about box cars and livestock transportation, which are not directly related to the entities in the target sentence."},
+    {"Sentence5": 3},
+    {"Reason5": "The sentence mentions specific locations (Reading tracks, West Jersey) which can help in identifying location entities in the target sentence."},
+    {"Sentence6": 2},
+    {"Reason6": "The sentence refers to an organization (Reading) which is somewhat relevant to identifying organization entities in the target sentence."},
+    {"Sentence7": 1},
+    {"Reason7": "The sentence talks about a locomotive number plate, which is not directly related to the entities in the target sentence."},
+    {"Sentence8": 1},
+    {"Reason8": "The sentence discusses darkness, rescuing, and bonfires, which are not directly related to the entities in the target sentence."},
+    {"Sentence9": 1},
+    {"Reason9": "The sentence mentions French tirailleurs and cartridges consumed, which are not directly related to the entities in the target sentence."},
+    {"Sentence10": 3},
+    {"Reason10": "The sentence talks about a specific organization (B&SR) and locomotives, which are somewhat relevant to identifying organization entities in the target sentence."},
+    {"Sentence11": 1},
+    {"Reason11": "The sentence mentions cancer going into remission, which is not directly related to the entities in the target sentence."},
+    {"Sentence12": 3},
+    {"Reason12": "The sentence provides information about moving rolling stock to Massachusetts and operation on the Edaville Railroad, which are somewhat related to the location and organization entities in the target sentence."},
+    {"Sentence13": 4},
+    {"Reason13": "The sentence mentions specific organizations (MTV, ESPN, CBS Cable) and their operations, which are relevant for identifying organization entities in the target sentence."},
+    {"Sentence14": 4},
+    {"Reason14": "The sentence talks about successful designs for various railroads, providing context for identifying organization entities in the target sentence."},
+    {"Sentence15": 2},
+    {"Reason15": "The sentence mentions the engine of a Reading train, which is somewhat relevant to identifying location entities in the target sentence."},
+    {"Sentence16": 1},
+    {"Reason16": "The sentence discusses a nail bomb explosion and injuries, which are not directly related to the entities in the target sentence."}
+]
+```
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Two cars were demolished and the two following cars were telescoped .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: F-94 Starfire , 1952 -- 1954 ; F-86 Sabre , 1953 -- 1954 .
+Answer: [{'F-94 Starfire': 'Miscellaneous'}, {'F-86 Sabre': 'Miscellaneous'}]
+Sentence: Although there were plans for races at Zandvoort before World War II , the first street race was held on June 3 , 1939 .
+Answer: [{'Zandvoort': 'Location'}, {'World War II': 'Miscellaneous'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+Sentence: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+Answer: [{'West Jersey': 'Location'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The second cancer went into remission .
+Answer: [{'cancer': 'Miscellaneous'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: MTV and ESPN thrived and gave rise to additional companion channels within a short time , while the CBS Cable channel folded after just over 14 months in operation .
+Answer: [{'MTV': 'Organization'}, {'ESPN': 'Organization'}, {'CBS Cable': 'Organization'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+Answer: [{'April 1999': 'Miscellaneous'}]
+Sentence: Two cars were demolished and the two following cars were telescoped .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"cars": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The second car of the West Jersey train was also carried into the ditch , the third and fourth cars being telescoped .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Location']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+Answer: [{'Basingstoke and Alton Light Railway': 'Organization'}]
+Sentence: The train services are operated by the Ffestiniog Railway Company .
+Answer: [{'Ffestiniog Railway Company': 'Organization'}]
+Sentence: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+Answer: [{'West Jersey': 'Location'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: Milepost 3 : Summit - highest point on the railroad .
+Answer: [{'Summit': 'Miscellaneous'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+Answer: [{'Pennsylvania': 'Location'}, {'Reading': 'Location'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: The second cancer went into remission .
+Answer: [{'cancer': 'Miscellaneous'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 4},
+    {"Sentence2": 4},
+    {"Sentence3": 5},
+    {"Sentence4": 4},
+    {"Sentence5": 4},
+    {"Sentence6": 3},
+    {"Sentence7": 5},
+    {"Sentence8": 3},
+    {"Sentence9": 4},
+    {"Sentence10": 4},
+    {"Sentence11": 4},
+    {"Sentence12": 3},
+    {"Sentence13": 3},
+    {"Sentence14": 5},
+    {"Sentence15": 4},
+    {"Sentence16": 1}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The second car of the West Jersey train was also carried into the ditch , the third and fourth cars being telescoped .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+Answer: [{'Basingstoke and Alton Light Railway': 'Organization'}]
+Sentence: The train services are operated by the Ffestiniog Railway Company .
+Answer: [{'Ffestiniog Railway Company': 'Organization'}]
+Sentence: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+Answer: [{'West Jersey': 'Location'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: Milepost 3 : Summit - highest point on the railroad .
+Answer: [{'Summit': 'Miscellaneous'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+Answer: [{'Pennsylvania': 'Location'}, {'Reading': 'Location'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: The second cancer went into remission .
+Answer: [{'cancer': 'Miscellaneous'}]
+Sentence: The second car of the West Jersey train was also carried into the ditch , the third and fourth cars being telescoped .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"West Jersey": "Location"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'As onlookers watched through the night , the mangled and burned bodies of the dead were carried from the wreckage which trapped them and laid side by side on the gravel bank near the track , with no other covering than the few newspapers gathered from the passengers .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Miscellaneous']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: Chris Penley 's death gave 9 people vital organs .
+Answer: [{'Chris Penley': 'Person'}]
+Sentence: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+Answer: [{'Basingstoke and Alton Light Railway': 'Organization'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+Sentence: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+Answer: [{'April 1999': 'Miscellaneous'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+Answer: [{'West Jersey': 'Location'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+Answer: [{'Williamsport': 'Location'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 3},
+    {"Sentence2": 2},
+    {"Sentence3": 3},
+    {"Sentence4": 2},
+    {"Sentence5": 1},
+    {"Sentence6": 4},
+    {"Sentence7": 1},
+    {"Sentence8": 1},
+    {"Sentence9": 2},
+    {"Sentence10": 2},
+    {"Sentence11": 4},
+    {"Sentence12": 3},
+    {"Sentence13": 2},
+    {"Sentence14": 1},
+    {"Sentence15": 1},
+    {"Sentence16": 2}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'As onlookers watched through the night , the mangled and burned bodies of the dead were carried from the wreckage which trapped them and laid side by side on the gravel bank near the track , with no other covering than the few newspapers gathered from the passengers .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Chris Penley 's death gave 9 people vital organs .
+Answer: [{'Chris Penley': 'Person'}]
+Sentence: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+Answer: [{'Basingstoke and Alton Light Railway': 'Organization'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+Sentence: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+Answer: [{'April 1999': 'Miscellaneous'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+Answer: [{'West Jersey': 'Location'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+Answer: [{'Williamsport': 'Location'}]
+Sentence: As onlookers watched through the night , the mangled and burned bodies of the dead were carried from the wreckage which trapped them and laid side by side on the gravel bank near the track , with no other covering than the few newspapers gathered from the passengers .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"newspapers": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'James W. Hoyt , Secretary of the New Jersey Department of Public Safety , immediately upon learning of the extent of the accident , telegraphed for the Philadelphia Medical Emergency Corps , fifteen of whom responded , and hurried to Atlantic City on a special train which left Philadelphia at 10:45 pm .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Person', 'Organization', 'Location']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+Answer: [{'April 1999': 'Miscellaneous'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+Answer: [{'West Jersey': 'Location'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+Answer: [{'Pennsylvania': 'Location'}, {'Reading': 'Location'}]
+Sentence: Chris Penley 's death gave 9 people vital organs .
+Answer: [{'Chris Penley': 'Person'}]
+Sentence: However this was not the first time Hitzig had experienced the interaction between the brain and electricity ; earlier in his career as a physician working with the Prussian Army he experimented on wounded soldiers whose skulls were fractured by bullets .
+Answer: [{'Hitzig': 'Person'}, {'Prussian Army': 'Organization'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: During the early nineties the station 's current affairs / talkback program hosted by Sattler , Maumill , Mabury , Peter Newman , Gary Carvolth and Rob Broadfield achieved considerable success in spite of the ever increasing level of racing broadcasts on the station .
+Answer: [{'Sattler': 'Person'}, {'Maumill': 'Person'}, {'Mabury': 'Person'}, {'Peter Newman': 'Person'}, {'Gary Carvolth': 'Person'}, {'Rob Broadfield': 'Person'}]
+Sentence: The circuit was inaugurated on August , 7 , 1948 .
+Answer: [{'August': 'Miscellaneous'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: The 139th was transferred in October 1862 to the VI Corps .
+Answer: [{'VI Corps': 'Organization'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 1},
+    {"Reason1": "The entity 'locomotive # 7' is not relevant to the target sentence."},
+    {"Sentence2": 1},
+    {"Reason2": "The entity 'April 1999' is not relevant to the target sentence."},
+    {"Sentence3": 1},
+    {"Reason3": "The entity 'Darkness' is not relevant to the target sentence."},
+    {"Sentence4": 3},
+    {"Reason4": "The entity 'West Jersey' is a Location entity, which is relevant to the target sentence."},
+    {"Sentence5": 3},
+    {"Reason5": "The entity 'Reading' is a Location entity, which is relevant to the target sentence."},
+    {"Sentence6": 5},
+    {"Reason6": "The entities 'Bridgton Hinkleys', 'Monson Railroad', and 'Franklin and Megantic Railway' are all Organization entities, which are relevant to the target sentence."},
+    {"Sentence7": 5},
+    {"Reason7": "The entities 'Pennsylvania' and 'Reading' are both Location entities, which are relevant to the target sentence."},
+    {"Sentence8": 5},
+    {"Reason8": "The entity 'Chris Penley' is a Person entity, which is relevant to the target sentence."},
+    {"Sentence9": 5},
+    {"Reason9": "The entities 'Hitzig' and 'Prussian Army' are relevant Person and Organization entities, respectively, to the target sentence."},
+    {"Sentence10": 3},
+    {"Reason10": "The entity 'Reading' is an Organization entity, which is relevant to the target sentence."},
+    {"Sentence11": 5},
+    {"Reason11": "The entity 'B&SR' is an Organization entity, which is relevant to the target sentence."},
+    {"Sentence12": 5},
+    {"Reason12": "The entities 'Sattler', 'Maumill', 'Mabury', 'Peter Newman', 'Gary Carvolth', and 'Rob Broadfield' are all Person entities, which are relevant to the target sentence."},
+    {"Sentence13": 1},
+    {"Reason13": "The entity 'August' is not relevant to the target sentence."},
+    {"Sentence14": 3},
+    {"Reason14": "The entities 'Massachusetts' and 'Edaville Railroad' are Location and Organization entities, respectively, which are relevant to the target sentence."},
+    {"Sentence15": 5},
+    {"Reason15": "The entity 'County Coroner William McLaughlin' is a Person entity, which is relevant to the target sentence."},
+    {"Sentence16": 5},
+    {"Reason16": "The entity 'VI Corps' is an Organization entity, which is relevant to the target sentence."}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'James W. Hoyt , Secretary of the New Jersey Department of Public Safety , immediately upon learning of the extent of the accident , telegraphed for the Philadelphia Medical Emergency Corps , fifteen of whom responded , and hurried to Atlantic City on a special train which left Philadelphia at 10:45 pm .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+Answer: [{'April 1999': 'Miscellaneous'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+Answer: [{'West Jersey': 'Location'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+Answer: [{'Pennsylvania': 'Location'}, {'Reading': 'Location'}]
+Sentence: Chris Penley 's death gave 9 people vital organs .
+Answer: [{'Chris Penley': 'Person'}]
+Sentence: However this was not the first time Hitzig had experienced the interaction between the brain and electricity ; earlier in his career as a physician working with the Prussian Army he experimented on wounded soldiers whose skulls were fractured by bullets .
+Answer: [{'Hitzig': 'Person'}, {'Prussian Army': 'Organization'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: During the early nineties the station 's current affairs / talkback program hosted by Sattler , Maumill , Mabury , Peter Newman , Gary Carvolth and Rob Broadfield achieved considerable success in spite of the ever increasing level of racing broadcasts on the station .
+Answer: [{'Sattler': 'Person'}, {'Maumill': 'Person'}, {'Mabury': 'Person'}, {'Peter Newman': 'Person'}, {'Gary Carvolth': 'Person'}, {'Rob Broadfield': 'Person'}]
+Sentence: The circuit was inaugurated on August , 7 , 1948 .
+Answer: [{'August': 'Miscellaneous'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: The 139th was transferred in October 1862 to the VI Corps .
+Answer: [{'VI Corps': 'Organization'}]
+Sentence: James W. Hoyt , Secretary of the New Jersey Department of Public Safety , immediately upon learning of the extent of the accident , telegraphed for the Philadelphia Medical Emergency Corps , fifteen of whom responded , and hurried to Atlantic City on a special train which left Philadelphia at 10:45 pm .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"James W. Hoyt": "Person"}, {"New Jersey Department of Public Safety": "Organization"}, {"Philadelphia Medical Emergency Corps": "Organization"}, {"Philadelphia": "Location"}, {"Atlantic City": "Location"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'He went directly into the block tower and questioned operator George F. Hauser. Houser told him that he thought the excursion train had time to cross the tracks of the Reading before the express got there and he set the " clear " signal for the West Jersey train .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Person', 'Organization', 'Location']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: Frazier himself was approaching retirement and focusing on upcoming paydays with protege Bobick .
+Answer: [{'Frazier': 'Person'}, {'Bobick': 'Person'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+Sentence: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+Answer: [{'West Jersey': 'Location'}]
+Sentence: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+Answer: [{'Pennsylvania': 'Location'}, {'Reading': 'Location'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+Answer: [{'Basingstoke and Alton Light Railway': 'Organization'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+Answer: [{'65th Air Division': 'Organization'}]
+Sentence: Milepost 3 : Summit - highest point on the railroad .
+Answer: [{'Summit': 'Miscellaneous'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 5},
+    {"Sentence2": 1},
+    {"Sentence3": 3},
+    {"Sentence4": 4},
+    {"Sentence5": 2},
+    {"Sentence6": 4},
+    {"Sentence7": 3},
+    {"Sentence8": 4},
+    {"Sentence9": 4},
+    {"Sentence10": 5},
+    {"Sentence11": 4},
+    {"Sentence12": 3},
+    {"Sentence13": 5},
+    {"Sentence14": 4},
+    {"Sentence15": 3},
+    {"Sentence16": 2}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'He went directly into the block tower and questioned operator George F. Hauser. Houser told him that he thought the excursion train had time to cross the tracks of the Reading before the express got there and he set the " clear " signal for the West Jersey train .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Frazier himself was approaching retirement and focusing on upcoming paydays with protege Bobick .
+Answer: [{'Frazier': 'Person'}, {'Bobick': 'Person'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+Sentence: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+Answer: [{'West Jersey': 'Location'}]
+Sentence: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+Answer: [{'Pennsylvania': 'Location'}, {'Reading': 'Location'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+Answer: [{'Basingstoke and Alton Light Railway': 'Organization'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+Answer: [{'65th Air Division': 'Organization'}]
+Sentence: Milepost 3 : Summit - highest point on the railroad .
+Answer: [{'Summit': 'Miscellaneous'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: He went directly into the block tower and questioned operator George F. Hauser. Houser told him that he thought the excursion train had time to cross the tracks of the Reading before the express got there and he set the " clear " signal for the West Jersey train .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"George F. Hauser": "Person"}, {"Reading": "Location"}, {"West Jersey": "Location"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Before Hauser could make a further explanation to the coroner he received an order from the railroad officials to say nothing .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  [Person, Organization]
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: New script editor Eric Saward requested that Bailey devise another story idea , but neither the submitted outlines for May Time ( later renamed Manwatch ) nor The Children of Seth were taken further .
+Answer: [{'Eric Saward': 'Person'}, {'Bailey': 'Person'}, {'May Time': 'Miscellaneous'}, {'Manwatch': 'Miscellaneous'}, {'The Children of Seth': 'Miscellaneous'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+Answer: [{'MAAA': 'Organization'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: They performed these studies at the home of Fritsch because the University of Berlin would not allow such experimentation in their laboratories .
+Answer: [{'Fritsch': 'Person'}, {'University of Berlin': 'Organization'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: Stanley and cohorts were found liable for defamation and making death threats .
+Answer: [{'Stanley': 'Person'}]
+Sentence: At the CIA fair , Hayley gets into an argument with Director Avery Bullock .
+Answer: [{'CIA': 'Organization'}, {'Hayley': 'Person'}, {'Director Avery Bullock': 'Person'}]
+Sentence: Indeed , the inscriptions on the Cup when it was successfully defended in 1894 only stated " Montreal HC " .
+Answer: [{'Montreal HC': 'Organization'}]
+Sentence: However this was not the first time Hitzig had experienced the interaction between the brain and electricity ; earlier in his career as a physician working with the Prussian Army he experimented on wounded soldiers whose skulls were fractured by bullets .
+Answer: [{'Hitzig': 'Person'}, {'Prussian Army': 'Organization'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 4},
+    {"Sentence2": 3},
+    {"Sentence3": 2},
+    {"Sentence4": 4},
+    {"Sentence5": 1},
+    {"Sentence6": 3},
+    {"Sentence7": 3},
+    {"Sentence8": 2},
+    {"Sentence9": 4},
+    {"Sentence10": 3},
+    {"Sentence11": 4},
+    {"Sentence12": 2},
+    {"Sentence13": 3},
+    {"Sentence14": 3},
+    {"Sentence15": 4},
+    {"Sentence16": 1}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Before Hauser could make a further explanation to the coroner he received an order from the railroad officials to say nothing .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: New script editor Eric Saward requested that Bailey devise another story idea , but neither the submitted outlines for May Time ( later renamed Manwatch ) nor The Children of Seth were taken further .
+Answer: [{'Eric Saward': 'Person'}, {'Bailey': 'Person'}, {'May Time': 'Miscellaneous'}, {'Manwatch': 'Miscellaneous'}, {'The Children of Seth': 'Miscellaneous'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+Answer: [{'MAAA': 'Organization'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: They performed these studies at the home of Fritsch because the University of Berlin would not allow such experimentation in their laboratories .
+Answer: [{'Fritsch': 'Person'}, {'University of Berlin': 'Organization'}]
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: Stanley and cohorts were found liable for defamation and making death threats .
+Answer: [{'Stanley': 'Person'}]
+Sentence: At the CIA fair , Hayley gets into an argument with Director Avery Bullock .
+Answer: [{'CIA': 'Organization'}, {'Hayley': 'Person'}, {'Director Avery Bullock': 'Person'}]
+Sentence: Indeed , the inscriptions on the Cup when it was successfully defended in 1894 only stated " Montreal HC " .
+Answer: [{'Montreal HC': 'Organization'}]
+Sentence: However this was not the first time Hitzig had experienced the interaction between the brain and electricity ; earlier in his career as a physician working with the Prussian Army he experimented on wounded soldiers whose skulls were fractured by bullets .
+Answer: [{'Hitzig': 'Person'}, {'Prussian Army': 'Organization'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+Sentence: Before Hauser could make a further explanation to the coroner he received an order from the railroad officials to say nothing .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Hauser": "Person"}, {"coroner": "Miscellaneous"}, {"railroad officials": "Organization"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'His reputation was that of an experienced engineer and a man of exceptionally high moral character , and not of a reckless or careless disposition .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Person']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: He won the Steele Prize from the American Mathematical Society in 1991 for his work in differential geometry .
+Answer: [{'Steele Prize': 'Miscellaneous'}, {'American Mathematical Society': 'Organization'}, {'1991': 'Miscellaneous'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: Another Nobel laureate scientist there was Richard J. Roberts .
+Answer: [{'Richard J. Roberts': 'Person'}]
+Sentence: Albert Wren was an Ontario politician .
+Answer: [{'Albert Wren': 'Person'}, {'Ontario': 'Location'}]
+Sentence: His brother Rodney also was a professional boxer with a 37-7 record .
+Answer: [{'Rodney': 'Person'}]
+Sentence: Bobick had now improved enough as a boxer to be a legitimate title threat .
+Answer: [{'Bobick': 'Person'}]
+Sentence: His parents were encouraged by a friend to develop the child 's musical talents and he studied classical piano in the United States .
+Answer: [{'United States': 'Location'}]
+Sentence: Known as the " Poet of the Piano " , Carmen Cavallaro showed a gift for music from age 3 , picking out tunes on a toy piano .
+Answer: [{'Carmen Cavallaro': 'Person'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: In 1950 he received his Ph.D. from Princeton University , where his advisor was Salomon Bochner .
+Answer: [{'Princeton University': 'Organization'}, {'Salomon Bochner': 'Person'}]
+Sentence: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+Answer: [{'Victoria': 'Location'}]
+Sentence: In this , he is often cited as being influenced by pianist Eddy Duchin .
+Answer: [{'Eddy Duchin': 'Person'}]
+Sentence: As a young pianist , he toured Europe performing in many capitals .
+Answer: [{'Europe': 'Location'}]
+Sentence: Hitzig is remembered for his work concerning the interaction between electrical current and the brain .
+Answer: [{'Hitzig': 'Person'}]
+Sentence: After his naval discharge , Langejans took a job at Meyer Music in Holland , where he was trained in the intricacies of instrument repair and electronics .
+Answer: [{'Langejans': 'Person'}, {'Meyer Music': 'Organization'}, {'Holland': 'Location'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 3},
+    {"Sentence2": 2},
+    {"Sentence3": 1},
+    {"Sentence4": 4},
+    {"Sentence5": 5},
+    {"Sentence6": 4},
+    {"Sentence7": 4},
+    {"Sentence8": 3},
+    {"Sentence9": 4},
+    {"Sentence10": 4},
+    {"Sentence11": 3},
+    {"Sentence12": 3},
+    {"Sentence13": 4},
+    {"Sentence14": 3},
+    {"Sentence15": 4},
+    {"Sentence16": 5}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'His reputation was that of an experienced engineer and a man of exceptionally high moral character , and not of a reckless or careless disposition .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+Answer: [{'Reading': 'Location'}]
+Sentence: He won the Steele Prize from the American Mathematical Society in 1991 for his work in differential geometry .
+Answer: [{'Steele Prize': 'Miscellaneous'}, {'American Mathematical Society': 'Organization'}, {'1991': 'Miscellaneous'}]
+Sentence: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+Answer: [{'Darkness': 'Miscellaneous'}]
+Sentence: Another Nobel laureate scientist there was Richard J. Roberts .
+Answer: [{'Richard J. Roberts': 'Person'}]
+Sentence: Albert Wren was an Ontario politician .
+Answer: [{'Albert Wren': 'Person'}, {'Ontario': 'Location'}]
+Sentence: His brother Rodney also was a professional boxer with a 37-7 record .
+Answer: [{'Rodney': 'Person'}]
+Sentence: Bobick had now improved enough as a boxer to be a legitimate title threat .
+Answer: [{'Bobick': 'Person'}]
+Sentence: His parents were encouraged by a friend to develop the child 's musical talents and he studied classical piano in the United States .
+Answer: [{'United States': 'Location'}]
+Sentence: Known as the " Poet of the Piano " , Carmen Cavallaro showed a gift for music from age 3 , picking out tunes on a toy piano .
+Answer: [{'Carmen Cavallaro': 'Person'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: In 1950 he received his Ph.D. from Princeton University , where his advisor was Salomon Bochner .
+Answer: [{'Princeton University': 'Organization'}, {'Salomon Bochner': 'Person'}]
+Sentence: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+Answer: [{'Victoria': 'Location'}]
+Sentence: In this , he is often cited as being influenced by pianist Eddy Duchin .
+Answer: [{'Eddy Duchin': 'Person'}]
+Sentence: As a young pianist , he toured Europe performing in many capitals .
+Answer: [{'Europe': 'Location'}]
+Sentence: Hitzig is remembered for his work concerning the interaction between electrical current and the brain .
+Answer: [{'Hitzig': 'Person'}]
+Sentence: After his naval discharge , Langejans took a job at Meyer Music in Holland , where he was trained in the intricacies of instrument repair and electronics .
+Answer: [{'Langejans': 'Person'}, {'Meyer Music': 'Organization'}, {'Holland': 'Location'}]
+Sentence: His reputation was that of an experienced engineer and a man of exceptionally high moral character , and not of a reckless or careless disposition .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"engine": "Miscellaneous"}, {"Reading": "Location"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Three others found that " the cause of the collision was the failure of Edward Farr , engineer of Train No. 23 , to give heed in time to the semaphore signals and crossing under the rules. .. the tower man , George F. Hauser , may have used poor judgment in his estimate of the distance away of the Atlantic City Railroad train when he gave the white boards to the West Jersey and Seashore Excursion Train No . 700 . "'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Person', 'Organization', 'Miscellaneous']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+Answer: [{'Pennsylvania': 'Location'}, {'Reading': 'Location'}]
+Sentence: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+Answer: [{'Basingstoke and Alton Light Railway': 'Organization'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: The train services are operated by the Ffestiniog Railway Company .
+Answer: [{'Ffestiniog Railway Company': 'Organization'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+Answer: [{'April 1999': 'Miscellaneous'}]
+Sentence: This corner is reportedly named after a local character who had earned the nickname of Tarzan and only wanted to give up his vegetable garden in the dunes if the track 's designers named a nearby corner after him .
+Answer: [{'Tarzan': 'Person'}]
+Sentence: Milepost 3 : Summit - highest point on the railroad .
+Answer: [{'Summit': 'Miscellaneous'}]
+Sentence: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+Answer: [{'MAAA': 'Organization'}]
+Sentence: Stanley and cohorts were found liable for defamation and making death threats .
+Answer: [{'Stanley': 'Person'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 4},
+    {"Sentence2": 3},
+    {"Sentence3": 5},
+    {"Sentence4": 3},
+    {"Sentence5": 4},
+    {"Sentence6": 3},
+    {"Sentence7": 4},
+    {"Sentence8": 4},
+    {"Sentence9": 4},
+    {"Sentence10": 3},
+    {"Sentence11": 5},
+    {"Sentence12": 2},
+    {"Sentence13": 4},
+    {"Sentence14": 4},
+    {"Sentence15": 3},
+    {"Sentence16": 5}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Three others found that " the cause of the collision was the failure of Edward Farr , engineer of Train No. 23 , to give heed in time to the semaphore signals and crossing under the rules. .. the tower man , George F. Hauser , may have used poor judgment in his estimate of the distance away of the Atlantic City Railroad train when he gave the white boards to the West Jersey and Seashore Excursion Train No . 700 . "'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+Answer: [{'Pennsylvania': 'Location'}, {'Reading': 'Location'}]
+Sentence: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+Answer: [{'Basingstoke and Alton Light Railway': 'Organization'}]
+Sentence: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+Answer: [{'County Coroner William McLaughlin': 'Person'}]
+Sentence: The train services are operated by the Ffestiniog Railway Company .
+Answer: [{'Ffestiniog Railway Company': 'Organization'}]
+Sentence: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+Answer: [{'locomotive # 7': 'Miscellaneous'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+Answer: [{'B&SR': 'Organization'}]
+Sentence: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Answer: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+Sentence: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+Answer: [{'Box cars': 'Miscellaneous'}]
+Sentence: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+Answer: [{'Reading': 'Organization'}]
+Sentence: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+Answer: [{'Bridgton Hinkleys': 'Organization'}, {'Monson Railroad': 'Organization'}, {'Franklin and Megantic Railway': 'Organization'}]
+Sentence: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+Answer: [{'April 1999': 'Miscellaneous'}]
+Sentence: This corner is reportedly named after a local character who had earned the nickname of Tarzan and only wanted to give up his vegetable garden in the dunes if the track 's designers named a nearby corner after him .
+Answer: [{'Tarzan': 'Person'}]
+Sentence: Milepost 3 : Summit - highest point on the railroad .
+Answer: [{'Summit': 'Miscellaneous'}]
+Sentence: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+Answer: [{'MAAA': 'Organization'}]
+Sentence: Stanley and cohorts were found liable for defamation and making death threats .
+Answer: [{'Stanley': 'Person'}]
+Sentence: Three others found that " the cause of the collision was the failure of Edward Farr , engineer of Train No. 23 , to give heed in time to the semaphore signals and crossing under the rules. .. the tower man , George F. Hauser , may have used poor judgment in his estimate of the distance away of the Atlantic City Railroad train when he gave the white boards to the West Jersey and Seashore Excursion Train No . 700 . "
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Edward Farr": "Person"}, {"Train No. 23": "Organization"}, {"George F. Hauser": "Person"}, {"Atlantic City Railroad": "Organization"}, {"West Jersey and Seashore Excursion Train No. 700": "Organization"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'They participated in the GMAC Bowl , losing to Tulsa 63-7 .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  [Organization]
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: Played defensive end for the Patriots in 1971 .
+Answer: [{'Patriots': 'Organization'}]
+Sentence: It was the 89th season of play for the Falcons .
+Answer: [{'Falcons': 'Organization'}]
+Sentence: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+Answer: [{'MAAA': 'Organization'}]
+Sentence: MTV and ESPN thrived and gave rise to additional companion channels within a short time , while the CBS Cable channel folded after just over 14 months in operation .
+Answer: [{'MTV': 'Organization'}, {'ESPN': 'Organization'}, {'CBS Cable': 'Organization'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: Benny Lee Boynton ( born December 6 , 1898 ) was an American football player .
+Answer: [{'Benny Lee Boynton': 'Person'}, {'American': 'Miscellaneous'}]
+Sentence: His inherited runners to score was 20 percent which ranked fourth lowest in the American League .
+Answer: [{'American League': 'Organization'}]
+Sentence: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+Answer: [{'Williamsport': 'Location'}]
+Sentence: Saturday Night Live made fun of Bobick by showing footage of his Nationally televised knockout loss , over and over again .
+Answer: [{'Saturday Night Live': 'Organization'}, {'Bobick': 'Person'}]
+Sentence: Bobick 's first match was against Tommy Burns .
+Answer: [{'Bobick': 'Person'}, {'Tommy Burns': 'Person'}]
+Sentence: They performed their first gig in Galway in December 2006 .
+Answer: [{'Galway': 'Location'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+Sentence: The south end features the lighted Bobby Morris Playfield .
+Answer: [{'Bobby Morris Playfield': 'Miscellaneous'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: Played in what has been called " The Game of the Century " between # 1 Texas and # 2 Arkansas on December 6 , 1970 , with the Longhorns winning 15-14 .
+Answer: [{'Texas': 'Organization'}, {'Arkansas': 'Organization'}, {'Longhorns': 'Miscellaneous'}]
+Sentence: Approximately 16,000 full-time and 40,000 part-time students enroll each year , with over 100,000 alumni .
+Answer: [{'16,000': 'Miscellaneous'}, {'40,000': 'Miscellaneous'}, {'100,000': 'Miscellaneous'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 3},
+    {"Sentence2": 3},
+    {"Sentence3": 4},
+    {"Sentence4": 5},
+    {"Sentence5": 1},
+    {"Sentence6": 3},
+    {"Sentence7": 3},
+    {"Sentence8": 3},
+    {"Sentence9": 4},
+    {"Sentence10": 4},
+    {"Sentence11": 3},
+    {"Sentence12": 5},
+    {"Sentence13": 1},
+    {"Sentence14": 3},
+    {"Sentence15": 5},
+    {"Sentence16": 2}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'They participated in the GMAC Bowl , losing to Tulsa 63-7 .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Played defensive end for the Patriots in 1971 .
+Answer: [{'Patriots': 'Organization'}]
+Sentence: It was the 89th season of play for the Falcons .
+Answer: [{'Falcons': 'Organization'}]
+Sentence: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+Answer: [{'MAAA': 'Organization'}]
+Sentence: MTV and ESPN thrived and gave rise to additional companion channels within a short time , while the CBS Cable channel folded after just over 14 months in operation .
+Answer: [{'MTV': 'Organization'}, {'ESPN': 'Organization'}, {'CBS Cable': 'Organization'}]
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: Benny Lee Boynton ( born December 6 , 1898 ) was an American football player .
+Answer: [{'Benny Lee Boynton': 'Person'}, {'American': 'Miscellaneous'}]
+Sentence: His inherited runners to score was 20 percent which ranked fourth lowest in the American League .
+Answer: [{'American League': 'Organization'}]
+Sentence: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+Answer: [{'Williamsport': 'Location'}]
+Sentence: Saturday Night Live made fun of Bobick by showing footage of his Nationally televised knockout loss , over and over again .
+Answer: [{'Saturday Night Live': 'Organization'}, {'Bobick': 'Person'}]
+Sentence: Bobick 's first match was against Tommy Burns .
+Answer: [{'Bobick': 'Person'}, {'Tommy Burns': 'Person'}]
+Sentence: They performed their first gig in Galway in December 2006 .
+Answer: [{'Galway': 'Location'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+Sentence: The south end features the lighted Bobby Morris Playfield .
+Answer: [{'Bobby Morris Playfield': 'Miscellaneous'}]
+Sentence: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+Answer: [{'Maine': 'Location'}]
+Sentence: Played in what has been called " The Game of the Century " between # 1 Texas and # 2 Arkansas on December 6 , 1970 , with the Longhorns winning 15-14 .
+Answer: [{'Texas': 'Organization'}, {'Arkansas': 'Organization'}, {'Longhorns': 'Miscellaneous'}]
+Sentence: Approximately 16,000 full-time and 40,000 part-time students enroll each year , with over 100,000 alumni .
+Answer: [{'16,000': 'Miscellaneous'}, {'40,000': 'Miscellaneous'}, {'100,000': 'Miscellaneous'}]
+Sentence: They participated in the GMAC Bowl , losing to Tulsa 63-7 .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"GMAC Bowl": "Organization"}, {"Tulsa": "Location"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Overall , 53 lettermen are returning from the 2006 team ( 25 on offense , 28 on defense and 0 on special teams ) .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Miscellaneous']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: Frazier himself was approaching retirement and focusing on upcoming paydays with protege Bobick .
+Answer: [{'Frazier': 'Person'}, {'Bobick': 'Person'}]
+Sentence: Approximately 16,000 full-time and 40,000 part-time students enroll each year , with over 100,000 alumni .
+Answer: [{'16,000': 'Miscellaneous'}, {'40,000': 'Miscellaneous'}, {'100,000': 'Miscellaneous'}]
+Sentence: It was the 89th season of play for the Falcons .
+Answer: [{'Falcons': 'Organization'}]
+Sentence: Played defensive end for the Patriots in 1971 .
+Answer: [{'Patriots': 'Organization'}]
+Sentence: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+Answer: [{'Victoria': 'Location'}]
+Sentence: Played in what has been called " The Game of the Century " between # 1 Texas and # 2 Arkansas on December 6 , 1970 , with the Longhorns winning 15-14 .
+Answer: [{'Texas': 'Organization'}, {'Arkansas': 'Organization'}, {'Longhorns': 'Miscellaneous'}]
+Sentence: He was inducted to the Texas High School Sports Hall of Fame in 1995 .
+Answer: [{'Texas High School Sports Hall of Fame': 'Organization'}]
+Sentence: The south end features the lighted Bobby Morris Playfield .
+Answer: [{'Bobby Morris Playfield': 'Miscellaneous'}]
+Sentence: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+Answer: [{'21 february 2005': 'Miscellaneous'}]
+Sentence: His excellent performance as a starter in the 2007 season has made him part of the new ' Big Three ' that include Dan Haren and Joe Blanton .
+Answer: [{'Dan Haren': 'Person'}, {'Joe Blanton': 'Person'}]
+Sentence: Bobick gained top-10 ranking in 1975 with eight more fights and wins , all again by KO .
+Answer: [{'Bobick': 'Person'}]
+Sentence: Benny Lee Boynton ( born December 6 , 1898 ) was an American football player .
+Answer: [{'Benny Lee Boynton': 'Person'}, {'American': 'Miscellaneous'}]
+Sentence: His inherited runners to score was 20 percent which ranked fourth lowest in the American League .
+Answer: [{'American League': 'Organization'}]
+Sentence: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+Answer: [{'65th Air Division': 'Organization'}]
+Sentence: Now , over 24 meetings , in addition to the Symposium , for between 200 and 500 scientists , are held annually .
+Answer: [{'Symposium': 'Miscellaneous'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 1},
+    {"Sentence2": 4},
+    {"Sentence3": 3},
+    {"Sentence4": 3},
+    {"Sentence5": 3},
+    {"Sentence6": 5},
+    {"Sentence7": 4},
+    {"Sentence8": 4},
+    {"Sentence9": 5},
+    {"Sentence10": 3},
+    {"Sentence11": 4},
+    {"Sentence12": 4},
+    {"Sentence13": 4},
+    {"Sentence14": 3},
+    {"Sentence15": 4},
+    {"Sentence16": 2}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Overall , 53 lettermen are returning from the 2006 team ( 25 on offense , 28 on defense and 0 on special teams ) .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: Frazier himself was approaching retirement and focusing on upcoming paydays with protege Bobick .
+Answer: [{'Frazier': 'Person'}, {'Bobick': 'Person'}]
+Sentence: Approximately 16,000 full-time and 40,000 part-time students enroll each year , with over 100,000 alumni .
+Answer: [{'16,000': 'Miscellaneous'}, {'40,000': 'Miscellaneous'}, {'100,000': 'Miscellaneous'}]
+Sentence: It was the 89th season of play for the Falcons .
+Answer: [{'Falcons': 'Organization'}]
+Sentence: Played defensive end for the Patriots in 1971 .
+Answer: [{'Patriots': 'Organization'}]
+Sentence: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+Answer: [{'Victoria': 'Location'}]
+Sentence: Played in what has been called " The Game of the Century " between # 1 Texas and # 2 Arkansas on December 6 , 1970 , with the Longhorns winning 15-14 .
+Answer: [{'Texas': 'Organization'}, {'Arkansas': 'Organization'}, {'Longhorns': 'Miscellaneous'}]
+Sentence: He was inducted to the Texas High School Sports Hall of Fame in 1995 .
+Answer: [{'Texas High School Sports Hall of Fame': 'Organization'}]
+Sentence: The south end features the lighted Bobby Morris Playfield .
+Answer: [{'Bobby Morris Playfield': 'Miscellaneous'}]
+Sentence: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+Answer: [{'21 february 2005': 'Miscellaneous'}]
+Sentence: His excellent performance as a starter in the 2007 season has made him part of the new ' Big Three ' that include Dan Haren and Joe Blanton .
+Answer: [{'Dan Haren': 'Person'}, {'Joe Blanton': 'Person'}]
+Sentence: Bobick gained top-10 ranking in 1975 with eight more fights and wins , all again by KO .
+Answer: [{'Bobick': 'Person'}]
+Sentence: Benny Lee Boynton ( born December 6 , 1898 ) was an American football player .
+Answer: [{'Benny Lee Boynton': 'Person'}, {'American': 'Miscellaneous'}]
+Sentence: His inherited runners to score was 20 percent which ranked fourth lowest in the American League .
+Answer: [{'American League': 'Organization'}]
+Sentence: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+Answer: [{'65th Air Division': 'Organization'}]
+Sentence: Now , over 24 meetings , in addition to the Symposium , for between 200 and 500 scientists , are held annually .
+Answer: [{'Symposium': 'Miscellaneous'}]
+Sentence: Overall , 53 lettermen are returning from the 2006 team ( 25 on offense , 28 on defense and 0 on special teams ) .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"2006": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : '30 Seconds to Mars ( or Thirty Seconds to Mars ) is an alternative rock band from Los Angeles , California , featuring Jared Leto , Shannon Leto , Tomo Milicevic .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Organization', 'Person', 'Location']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: In 1980 , Budjana started Squirrel , his first jazz band , with his schoolmates in Surabaya .
+Answer: [{'Budjana': 'Person'}, {'Squirrel': 'Organization'}, {'Surabaya': 'Location'}]
+Sentence: Oleg Mikhaylovich Gazmanov is a Russian singer .
+Answer: [{'Oleg Mikhaylovich Gazmanov': 'Person'}, {'Russian': 'Miscellaneous'}]
+Sentence: After working with small revolving door of guitarists ( as the band 's first two guitarists , Kevin Drake and Solon Bixler , left the band due to issues primarily related to touring ) , the three auditioned Tomo Miličević to round out the band 's roster .
+Answer: [{'Kevin Drake': 'Person'}, {'Solon Bixler': 'Person'}, {'Tomo Miličević': 'Person'}]
+Sentence: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+Answer: [{'MTV2': 'Organization'}]
+Sentence: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+Answer: [{'Matt Wachter': 'Person'}]
+Sentence: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+Answer: [{'Dark Room Notes': 'Organization'}, {'Dublin': 'Location'}, {'Ireland': 'Location'}]
+Sentence: He is the lead guitarist and songwriter of the band Gigi .
+Answer: [{'Gigi': 'Organization'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: He is known to have a three-and-a-half octave range voice , and has performed with John Denver on the song " Let Us Begin ... "
+Answer: [{'John Denver': 'Person'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+Sentence: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+Answer: [{'Spring 2007': 'Miscellaneous'}, {'The Used': 'Organization'}, {'Taste of Chaos': 'Miscellaneous'}, {'Europe': 'Location'}, {'Linkin Park': 'Organization'}]
+Sentence: Carter began playing his first professional gigs when he was nine .
+Answer: [{'Carter': 'Person'}]
+Sentence: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+Answer: [{'Jared Leto': 'Person'}, {'Shannon': 'Person'}, {'30 Seconds to Mars': 'Organization'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 4},
+    {"Sentence2": 3},
+    {"Sentence3": 5},
+    {"Sentence4": 3},
+    {"Sentence5": 4},
+    {"Sentence6": 4},
+    {"Sentence7": 4},
+    {"Sentence8": 5},
+    {"Sentence9": 4},
+    {"Sentence10": 4},
+    {"Sentence11": 4},
+    {"Sentence12": 4},
+    {"Sentence13": 5},
+    {"Sentence14": 5},
+    {"Sentence15": 4},
+    {"Sentence16": 5}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : '30 Seconds to Mars ( or Thirty Seconds to Mars ) is an alternative rock band from Los Angeles , California , featuring Jared Leto , Shannon Leto , Tomo Milicevic .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: In 1980 , Budjana started Squirrel , his first jazz band , with his schoolmates in Surabaya .
+Answer: [{'Budjana': 'Person'}, {'Squirrel': 'Organization'}, {'Surabaya': 'Location'}]
+Sentence: Oleg Mikhaylovich Gazmanov is a Russian singer .
+Answer: [{'Oleg Mikhaylovich Gazmanov': 'Person'}, {'Russian': 'Miscellaneous'}]
+Sentence: After working with small revolving door of guitarists ( as the band 's first two guitarists , Kevin Drake and Solon Bixler , left the band due to issues primarily related to touring ) , the three auditioned Tomo Miličević to round out the band 's roster .
+Answer: [{'Kevin Drake': 'Person'}, {'Solon Bixler': 'Person'}, {'Tomo Miličević': 'Person'}]
+Sentence: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+Answer: [{'MTV2': 'Organization'}]
+Sentence: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+Answer: [{'Matt Wachter': 'Person'}]
+Sentence: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+Answer: [{'Dark Room Notes': 'Organization'}, {'Dublin': 'Location'}, {'Ireland': 'Location'}]
+Sentence: He is the lead guitarist and songwriter of the band Gigi .
+Answer: [{'Gigi': 'Organization'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: He is known to have a three-and-a-half octave range voice , and has performed with John Denver on the song " Let Us Begin ... "
+Answer: [{'John Denver': 'Person'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+Sentence: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+Answer: [{'Spring 2007': 'Miscellaneous'}, {'The Used': 'Organization'}, {'Taste of Chaos': 'Miscellaneous'}, {'Europe': 'Location'}, {'Linkin Park': 'Organization'}]
+Sentence: Carter began playing his first professional gigs when he was nine .
+Answer: [{'Carter': 'Person'}]
+Sentence: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+Answer: [{'Jared Leto': 'Person'}, {'Shannon': 'Person'}, {'30 Seconds to Mars': 'Organization'}]
+Sentence: 30 Seconds to Mars ( or Thirty Seconds to Mars ) is an alternative rock band from Los Angeles , California , featuring Jared Leto , Shannon Leto , Tomo Milicevic .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"30 Seconds to Mars": "Organization"}, {"Thirty Seconds to Mars": "Organization"}, {"Los Angeles": "Location"}, {"California": "Location"}, {"Jared Leto": "Person"}, {"Shannon Leto": "Person"}, {"Tomo Milicevic": "Person"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Their sophomore album , A Beautiful Lie , was released on August 30 , 2005 .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Miscellaneous']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: Darkness Death Doom is the sixth album by Runemagick .
+Answer: [{'Runemagick': 'Organization'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+Answer: [{'Jared Leto': 'Person'}, {'Shannon': 'Person'}, {'30 Seconds to Mars': 'Organization'}]
+Sentence: The album 's title is an amalgamation of the words ' digital ' and ' analogue ' , two of the principal technologies that have been used in sound recording .
+Answer: [{'digital': 'Miscellaneous'}, {'analogue': 'Miscellaneous'}]
+Sentence: They performed their first gig in Galway in December 2006 .
+Answer: [{'Galway': 'Location'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+Answer: [{'Spring 2007': 'Miscellaneous'}, {'The Used': 'Organization'}, {'Taste of Chaos': 'Miscellaneous'}, {'Europe': 'Location'}, {'Linkin Park': 'Organization'}]
+Sentence: It spawned the French hit singles " Chaque fois " and " J'ai confiance en toi " .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+Answer: [{'MTV2': 'Organization'}]
+Sentence: He is the lead guitarist and songwriter of the band Gigi .
+Answer: [{'Gigi': 'Organization'}]
+Sentence: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+Answer: [{'21 february 2005': 'Miscellaneous'}]
+Sentence: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+Answer: [{'Dark Room Notes': 'Organization'}, {'Dublin': 'Location'}, {'Ireland': 'Location'}]
+Sentence: He has one daughter , Angelina , born in December 2004 .
+Answer: [{'Angelina': 'Person'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 1},
+    {"Sentence2": 5},
+    {"Sentence3": 5},
+    {"Sentence4": 4},
+    {"Sentence5": 3},
+    {"Sentence6": 4},
+    {"Sentence7": 5},
+    {"Sentence8": 3},
+    {"Sentence9": 4},
+    {"Sentence10": 4},
+    {"Sentence11": 4},
+    {"Sentence12": 3},
+    {"Sentence13": 5},
+    {"Sentence14": 4},
+    {"Sentence15": 3},
+    {"Sentence16": 5}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Their sophomore album , A Beautiful Lie , was released on August 30 , 2005 .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Darkness Death Doom is the sixth album by Runemagick .
+Answer: [{'Runemagick': 'Organization'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+Answer: [{'Jared Leto': 'Person'}, {'Shannon': 'Person'}, {'30 Seconds to Mars': 'Organization'}]
+Sentence: The album 's title is an amalgamation of the words ' digital ' and ' analogue ' , two of the principal technologies that have been used in sound recording .
+Answer: [{'digital': 'Miscellaneous'}, {'analogue': 'Miscellaneous'}]
+Sentence: They performed their first gig in Galway in December 2006 .
+Answer: [{'Galway': 'Location'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+Answer: [{'Spring 2007': 'Miscellaneous'}, {'The Used': 'Organization'}, {'Taste of Chaos': 'Miscellaneous'}, {'Europe': 'Location'}, {'Linkin Park': 'Organization'}]
+Sentence: It spawned the French hit singles " Chaque fois " and " J'ai confiance en toi " .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+Answer: [{'MTV2': 'Organization'}]
+Sentence: He is the lead guitarist and songwriter of the band Gigi .
+Answer: [{'Gigi': 'Organization'}]
+Sentence: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+Answer: [{'21 february 2005': 'Miscellaneous'}]
+Sentence: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+Answer: [{'Dark Room Notes': 'Organization'}, {'Dublin': 'Location'}, {'Ireland': 'Location'}]
+Sentence: He has one daughter , Angelina , born in December 2004 .
+Answer: [{'Angelina': 'Person'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+Sentence: Their sophomore album , A Beautiful Lie , was released on August 30 , 2005 .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"A Beautiful Lie": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The second nomination was for Best Rock Video ; however , they lost to AFI 's " Miss Murder " .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Organization']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: He is the lead guitarist and songwriter of the band Gigi .
+Answer: [{'Gigi': 'Organization'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+Answer: [{'Jared Leto': 'Person'}, {'Shannon': 'Person'}, {'30 Seconds to Mars': 'Organization'}]
+Sentence: They performed their first gig in Galway in December 2006 .
+Answer: [{'Galway': 'Location'}]
+Sentence: Bobick 's first match was against Tommy Burns .
+Answer: [{'Bobick': 'Person'}, {'Tommy Burns': 'Person'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: Saturday Night Live made fun of Bobick by showing footage of his Nationally televised knockout loss , over and over again .
+Answer: [{'Saturday Night Live': 'Organization'}, {'Bobick': 'Person'}]
+Sentence: The second cancer went into remission .
+Answer: [{'cancer': 'Miscellaneous'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+Sentence: New script editor Eric Saward requested that Bailey devise another story idea , but neither the submitted outlines for May Time ( later renamed Manwatch ) nor The Children of Seth were taken further .
+Answer: [{'Eric Saward': 'Person'}, {'Bailey': 'Person'}, {'May Time': 'Miscellaneous'}, {'Manwatch': 'Miscellaneous'}, {'The Children of Seth': 'Miscellaneous'}]
+Sentence: He died in Hollywood , California .
+Answer: [{'Hollywood': 'Location'}, {'California': 'Location'}]
+Sentence: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+Answer: [{'MTV2': 'Organization'}]
+Sentence: At the CIA fair , Hayley gets into an argument with Director Avery Bullock .
+Answer: [{'CIA': 'Organization'}, {'Hayley': 'Person'}, {'Director Avery Bullock': 'Person'}]
+Sentence: It spawned the French hit singles " Chaque fois " and " J'ai confiance en toi " .
+Answer: [{'French': 'Miscellaneous'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 3},
+    {"Reason1": "The sentence mentions the band Gigi, which is an organization, but the context is not directly related to the target sentence."},
+    {"Sentence2": 1},
+    {"Reason2": "The sentence mentions Siouxsie as a person, which is not directly related to the target sentence."},
+    {"Sentence3": 4},
+    {"Reason3": "The sentence mentions various organizations like Orgy, Velvet Revolver, and Linkin Park, which are related to the target sentence as it talks about music production."},
+    {"Sentence4": 5},
+    {"Reason4": "The sentence provides information about Jared Leto, Shannon, and 30 Seconds to Mars, which are directly related to the target sentence."},
+    {"Sentence5": 2},
+    {"Reason5": "The sentence mentions Galway as a location, which is not directly related to the target sentence."},
+    {"Sentence6": 3},
+    {"Reason6": "The sentence mentions Bobick and Tommy Burns as persons, which are not directly related to the target sentence."},
+    {"Sentence7": 3},
+    {"Reason7": "The sentence mentions Virgin Records as an organization, which is not directly related to the target sentence."},
+    {"Sentence8": 3},
+    {"Reason8": "The sentence mentions Mattias Noren as a person, which is not directly related to the target sentence."},
+    {"Sentence9": 4},
+    {"Reason9": "The sentence mentions Saturday Night Live and Bobick, which are related to the target sentence as it talks about a televised event."},
+    {"Sentence10": 1},
+    {"Reason10": "The sentence mentions cancer as miscellaneous, which is not directly related to the target sentence."},
+    {"Sentence11": 4},
+    {"Reason11": "The sentence mentions various organizations like Head Automatica, The Receiving End of Sirens, Cobra Starship, and Street Drum Corps, which are related to the target sentence as it talks about bands on tour."},
+    {"Sentence12": 3},
+    {"Reason12": "The sentence mentions Eric Saward, Bailey, May Time, Manwatch, and The Children of Seth, which are not directly related to the target sentence."},
+    {"Sentence13": 4},
+    {"Reason13": "The sentence mentions Hollywood and California as locations, which are related to the target sentence as it talks about a place of death."},
+    {"Sentence14": 3},
+    {"Reason14": "The sentence mentions MTV2 as an organization, which is not directly related to the target sentence."},
+    {"Sentence15": 4},
+    {"Reason15": "The sentence mentions CIA, Hayley, and Director Avery Bullock, which are related to the target sentence as it talks about an argument with a director."},
+    {"Sentence16": 2},
+    {"Reason16": "The sentence mentions French as miscellaneous, which is not directly related to the target sentence."}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The second nomination was for Best Rock Video ; however , they lost to AFI 's " Miss Murder " .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: He is the lead guitarist and songwriter of the band Gigi .
+Answer: [{'Gigi': 'Organization'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+Answer: [{'Jared Leto': 'Person'}, {'Shannon': 'Person'}, {'30 Seconds to Mars': 'Organization'}]
+Sentence: They performed their first gig in Galway in December 2006 .
+Answer: [{'Galway': 'Location'}]
+Sentence: Bobick 's first match was against Tommy Burns .
+Answer: [{'Bobick': 'Person'}, {'Tommy Burns': 'Person'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: Saturday Night Live made fun of Bobick by showing footage of his Nationally televised knockout loss , over and over again .
+Answer: [{'Saturday Night Live': 'Organization'}, {'Bobick': 'Person'}]
+Sentence: The second cancer went into remission .
+Answer: [{'cancer': 'Miscellaneous'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+Sentence: New script editor Eric Saward requested that Bailey devise another story idea , but neither the submitted outlines for May Time ( later renamed Manwatch ) nor The Children of Seth were taken further .
+Answer: [{'Eric Saward': 'Person'}, {'Bailey': 'Person'}, {'May Time': 'Miscellaneous'}, {'Manwatch': 'Miscellaneous'}, {'The Children of Seth': 'Miscellaneous'}]
+Sentence: He died in Hollywood , California .
+Answer: [{'Hollywood': 'Location'}, {'California': 'Location'}]
+Sentence: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+Answer: [{'MTV2': 'Organization'}]
+Sentence: At the CIA fair , Hayley gets into an argument with Director Avery Bullock .
+Answer: [{'CIA': 'Organization'}, {'Hayley': 'Person'}, {'Director Avery Bullock': 'Person'}]
+Sentence: It spawned the French hit singles " Chaque fois " and " J'ai confiance en toi " .
+Answer: [{'French': 'Miscellaneous'}]
+Sentence: The second nomination was for Best Rock Video ; however , they lost to AFI 's " Miss Murder " .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"AFI": "Organization"}, {"Miss Murder": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : '" Jared and Shannon put together this thing called Environmentor which is illustrating ways --- alternatives --- to kind of clean up some of the mess we leave behind .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  [Person, Organization]
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+Answer: [{'Jared Leto': 'Person'}, {'Shannon': 'Person'}, {'30 Seconds to Mars': 'Organization'}]
+Sentence: Behe has stated that the results of the paper support his notion of irreducible complexity , based on the calculation of the probability of mutations required for evolution to succeed .
+Answer: [{'Behe': 'Person'}]
+Sentence: For a while Ilona lives in harmony with both men .
+Answer: [{'Ilona': 'Person'}]
+Sentence: New script editor Eric Saward requested that Bailey devise another story idea , but neither the submitted outlines for May Time ( later renamed Manwatch ) nor The Children of Seth were taken further .
+Answer: [{'Eric Saward': 'Person'}, {'Bailey': 'Person'}, {'May Time': 'Miscellaneous'}, {'Manwatch': 'Miscellaneous'}, {'The Children of Seth': 'Miscellaneous'}]
+Sentence: The album 's title is an amalgamation of the words ' digital ' and ' analogue ' , two of the principal technologies that have been used in sound recording .
+Answer: [{'digital': 'Miscellaneous'}, {'analogue': 'Miscellaneous'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: Steve and Roger begin making prank calls to the world leaders , but then they all * 69 the two .
+Answer: [{'Steve': 'Person'}, {'Roger': 'Person'}]
+Sentence: This corner is reportedly named after a local character who had earned the nickname of Tarzan and only wanted to give up his vegetable garden in the dunes if the track 's designers named a nearby corner after him .
+Answer: [{'Tarzan': 'Person'}]
+Sentence: " I just thought , ' You fools , this is what we do ' , " says Ben Player , one of only two pro riders who voted to compete .
+Answer: [{'Ben Player': 'Person'}]
+Sentence: For example , " Fallen " was previously called " Jupiter " , and " Year Zero " was previously called " Hero " .
+Answer: [{'Fallen': 'Miscellaneous'}, {'Jupiter': 'Miscellaneous'}, {'Year Zero': 'Miscellaneous'}, {'Hero': 'Miscellaneous'}]
+Sentence: They believe that the world is run by a secret society of Jews .
+Answer: [{'Jews': 'Miscellaneous'}]
+Sentence: In 2004 he co-wrote a controversial paper with prominent intelligent design proponent Michael Behe .
+Answer: [{'2004': 'Miscellaneous'}, {'Michael Behe': 'Person'}]
+Sentence: Dorothea was the common link or nexus among them all .
+Answer: [{'Dorothea': 'Person'}]
+Sentence: After that show , Carter 's father bought his son a tin drum set with paper heads since Carter showed much interest in learning the instrument .
+Answer: [{'Carter': 'Person'}]
+Sentence: Player pinpoints Mike Stewart -- the undisputed guru of bodyboarding who had pioneered the sport -- for kick-starting an era of self-reliance and self-belief , backed by his call to " support those who support bodyboarding " .
+Answer: [{'Mike Stewart': 'Person'}]
+Sentence: Another Nobel laureate scientist there was Richard J. Roberts .
+Answer: [{'Richard J. Roberts': 'Person'}]
+
+--------------------------------------------------
+ANSWER   :  ```json
+[
+    {"Sentence1": 5},
+    {"Reason1": "Contains multiple named entities (Jared Leto, Shannon, 30 Seconds to Mars) that match the entity types in the target sentence."},
+    {"Sentence2": 1},
+    {"Reason2": "Only one named entity (Behe) matches the entity types in the target sentence."},
+    {"Sentence3": 1},
+    {"Reason3": "Contains one named entity (Ilona) that matches the entity types in the target sentence, but not as relevant."},
+    {"Sentence4": 2},
+    {"Reason4": "Contains multiple named entities (Eric Saward, Bailey) but the entity types are not a direct match to the target sentence."},
+    {"Sentence5": 3},
+    {"Reason5": "Contains two named entities (digital, analogue) that match the 'Miscellaneous' entity type in the target sentence."},
+    {"Sentence6": 3},
+    {"Reason6": "Contains one named entity (Mattias Noren) that matches the 'Person' entity type in the target sentence."},
+    {"Sentence7": 4},
+    {"Reason7": "Contains two named entities (Steve, Roger) that match the 'Person' entity type in the target sentence."},
+    {"Sentence8": 3},
+    {"Reason8": "Contains one named entity (Tarzan) that matches the 'Person' entity type in the target sentence."},
+    {"Sentence9": 4},
+    {"Reason9": "Contains one named entity (Ben Player) that matches the 'Person' entity type in the target sentence."},
+    {"Sentence10": 3},
+    {"Reason10": "Contains multiple named entities (Fallen, Jupiter, Year Zero, Hero) that match the 'Miscellaneous' entity type in the target sentence."},
+    {"Sentence11": 2},
+    {"Reason11": "Contains one named entity (Jews) that matches the 'Miscellaneous' entity type in the target sentence, but not directly related."},
+    {"Sentence12": 2},
+    {"Reason12": "Contains one named entity (Michael Behe) that matches the 'Person' entity type in the target sentence, but not directly related."},
+    {"Sentence13": 1},
+    {"Reason13": "Contains one named entity (Dorothea) that matches the 'Person' entity type in the target sentence, but not directly related."},
+    {"Sentence14": 3},
+    {"Reason14": "Contains one named entity (Carter) that matches the 'Person' entity type in the target sentence."},
+    {"Sentence15": 4},
+    {"Reason15": "Contains one named entity (Mike Stewart) that matches the 'Person' entity type in the target sentence."},
+    {"Sentence16": 3},
+    {"Reason16": "Contains one named entity (Richard J. Roberts) that matches the 'Person' entity type in the target sentence, but not directly related."}
+]
+```
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : '" Jared and Shannon put together this thing called Environmentor which is illustrating ways --- alternatives --- to kind of clean up some of the mess we leave behind .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+Answer: [{'Jared Leto': 'Person'}, {'Shannon': 'Person'}, {'30 Seconds to Mars': 'Organization'}]
+Sentence: Behe has stated that the results of the paper support his notion of irreducible complexity , based on the calculation of the probability of mutations required for evolution to succeed .
+Answer: [{'Behe': 'Person'}]
+Sentence: For a while Ilona lives in harmony with both men .
+Answer: [{'Ilona': 'Person'}]
+Sentence: New script editor Eric Saward requested that Bailey devise another story idea , but neither the submitted outlines for May Time ( later renamed Manwatch ) nor The Children of Seth were taken further .
+Answer: [{'Eric Saward': 'Person'}, {'Bailey': 'Person'}, {'May Time': 'Miscellaneous'}, {'Manwatch': 'Miscellaneous'}, {'The Children of Seth': 'Miscellaneous'}]
+Sentence: The album 's title is an amalgamation of the words ' digital ' and ' analogue ' , two of the principal technologies that have been used in sound recording .
+Answer: [{'digital': 'Miscellaneous'}, {'analogue': 'Miscellaneous'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: Steve and Roger begin making prank calls to the world leaders , but then they all * 69 the two .
+Answer: [{'Steve': 'Person'}, {'Roger': 'Person'}]
+Sentence: This corner is reportedly named after a local character who had earned the nickname of Tarzan and only wanted to give up his vegetable garden in the dunes if the track 's designers named a nearby corner after him .
+Answer: [{'Tarzan': 'Person'}]
+Sentence: " I just thought , ' You fools , this is what we do ' , " says Ben Player , one of only two pro riders who voted to compete .
+Answer: [{'Ben Player': 'Person'}]
+Sentence: For example , " Fallen " was previously called " Jupiter " , and " Year Zero " was previously called " Hero " .
+Answer: [{'Fallen': 'Miscellaneous'}, {'Jupiter': 'Miscellaneous'}, {'Year Zero': 'Miscellaneous'}, {'Hero': 'Miscellaneous'}]
+Sentence: They believe that the world is run by a secret society of Jews .
+Answer: [{'Jews': 'Miscellaneous'}]
+Sentence: In 2004 he co-wrote a controversial paper with prominent intelligent design proponent Michael Behe .
+Answer: [{'2004': 'Miscellaneous'}, {'Michael Behe': 'Person'}]
+Sentence: Dorothea was the common link or nexus among them all .
+Answer: [{'Dorothea': 'Person'}]
+Sentence: After that show , Carter 's father bought his son a tin drum set with paper heads since Carter showed much interest in learning the instrument .
+Answer: [{'Carter': 'Person'}]
+Sentence: Player pinpoints Mike Stewart -- the undisputed guru of bodyboarding who had pioneered the sport -- for kick-starting an era of self-reliance and self-belief , backed by his call to " support those who support bodyboarding " .
+Answer: [{'Mike Stewart': 'Person'}]
+Sentence: Another Nobel laureate scientist there was Richard J. Roberts .
+Answer: [{'Richard J. Roberts': 'Person'}]
+Sentence: " Jared and Shannon put together this thing called Environmentor which is illustrating ways --- alternatives --- to kind of clean up some of the mess we leave behind .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Jared": "Person"}, {"Shannon": "Person"}, {"Environmentor": "Organization"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'They are also scheduled to play Roskilde , Rock am Ring , Pinkpop , Give It A Name Festival and Download .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  [Location, Miscellaneous]
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: Prior to 2001 , the event was held in Kuala Lumpur .
+Answer: [{'Kuala Lumpur': 'Location'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: The 2007 event is being held from September 10 till September 16 .
+Answer: [{'2007 event': 'Miscellaneous'}, {'September 10': 'Miscellaneous'}, {'September 16': 'Miscellaneous'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+Answer: [{'Dark Room Notes': 'Organization'}, {'Dublin': 'Location'}, {'Ireland': 'Location'}]
+Sentence: He is the lead guitarist and songwriter of the band Gigi .
+Answer: [{'Gigi': 'Organization'}]
+Sentence: They performed their first gig in Galway in December 2006 .
+Answer: [{'Galway': 'Location'}]
+Sentence: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+Answer: [{'Matt Wachter': 'Person'}]
+Sentence: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+Answer: [{'MTV2': 'Organization'}]
+Sentence: As a young pianist , he toured Europe performing in many capitals .
+Answer: [{'Europe': 'Location'}]
+Sentence: Circuit Park Zandvoort played host to the first race in the 2006/07 season of A1 Grand Prix from 29 September - 1 October 2006 .
+Answer: [{'Circuit Park Zandvoort': 'Location'}, {'A1 Grand Prix': 'Organization'}]
+Sentence: To fully appreciate the importance of this cultural scene , see the entries for Moses Mendelssohn , Gotthold Ephraim Lessing , Friedrich Schlegel , Germaine de Staë , Felix Mendelssohn , Ludwi Tieck , Novalis , and others .
+Answer: [{'Moses Mendelssohn': 'Person'}, {'Gotthold Ephraim Lessing': 'Person'}, {'Friedrich Schlegel': 'Person'}, {'Germaine de Staë': 'Person'}, {'Felix Mendelssohn': 'Person'}, {'Ludwi Tieck': 'Person'}, {'Novalis': 'Person'}]
+Sentence: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+Answer: [{'Spring 2007': 'Miscellaneous'}, {'The Used': 'Organization'}, {'Taste of Chaos': 'Miscellaneous'}, {'Europe': 'Location'}, {'Linkin Park': 'Organization'}]
+Sentence: Darkness Death Doom is the sixth album by Runemagick .
+Answer: [{'Runemagick': 'Organization'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 4},
+    {"Sentence2": 3},
+    {"Sentence3": 2},
+    {"Sentence4": 3},
+    {"Sentence5": 2},
+    {"Sentence6": 3},
+    {"Sentence7": 4},
+    {"Sentence8": 2},
+    {"Sentence9": 4},
+    {"Sentence10": 2},
+    {"Sentence11": 3},
+    {"Sentence12": 4},
+    {"Sentence13": 4},
+    {"Sentence14": 3},
+    {"Sentence15": 5},
+    {"Sentence16": 3}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'They are also scheduled to play Roskilde , Rock am Ring , Pinkpop , Give It A Name Festival and Download .'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Prior to 2001 , the event was held in Kuala Lumpur .
+Answer: [{'Kuala Lumpur': 'Location'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: The 2007 event is being held from September 10 till September 16 .
+Answer: [{'2007 event': 'Miscellaneous'}, {'September 10': 'Miscellaneous'}, {'September 16': 'Miscellaneous'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+Answer: [{'Dark Room Notes': 'Organization'}, {'Dublin': 'Location'}, {'Ireland': 'Location'}]
+Sentence: He is the lead guitarist and songwriter of the band Gigi .
+Answer: [{'Gigi': 'Organization'}]
+Sentence: They performed their first gig in Galway in December 2006 .
+Answer: [{'Galway': 'Location'}]
+Sentence: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+Answer: [{'Matt Wachter': 'Person'}]
+Sentence: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+Answer: [{'MTV2': 'Organization'}]
+Sentence: As a young pianist , he toured Europe performing in many capitals .
+Answer: [{'Europe': 'Location'}]
+Sentence: Circuit Park Zandvoort played host to the first race in the 2006/07 season of A1 Grand Prix from 29 September - 1 October 2006 .
+Answer: [{'Circuit Park Zandvoort': 'Location'}, {'A1 Grand Prix': 'Organization'}]
+Sentence: To fully appreciate the importance of this cultural scene , see the entries for Moses Mendelssohn , Gotthold Ephraim Lessing , Friedrich Schlegel , Germaine de Staë , Felix Mendelssohn , Ludwi Tieck , Novalis , and others .
+Answer: [{'Moses Mendelssohn': 'Person'}, {'Gotthold Ephraim Lessing': 'Person'}, {'Friedrich Schlegel': 'Person'}, {'Germaine de Staë': 'Person'}, {'Felix Mendelssohn': 'Person'}, {'Ludwi Tieck': 'Person'}, {'Novalis': 'Person'}]
+Sentence: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+Answer: [{'Spring 2007': 'Miscellaneous'}, {'The Used': 'Organization'}, {'Taste of Chaos': 'Miscellaneous'}, {'Europe': 'Location'}, {'Linkin Park': 'Organization'}]
+Sentence: Darkness Death Doom is the sixth album by Runemagick .
+Answer: [{'Runemagick': 'Organization'}]
+Sentence: They are also scheduled to play Roskilde , Rock am Ring , Pinkpop , Give It A Name Festival and Download .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Roskilde": "Location"}, {"Rock am Ring": "Location"}, {"Pinkpop": "Location"}, {"Give It A Name Festival": "Organization"}, {"Download": "Organization"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'On August 8th , 2007 , Kerrang ! announced that 30 Seconds to Mars has been nominated for two categories of the Kerrang !'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Organization']
+--------------------------------------------------
+QUESTION :  Here provide some examples and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]Sentence: He has one daughter , Angelina , born in December 2004 .
+Answer: [{'Angelina': 'Person'}]
+Sentence: The circuit was inaugurated on August , 7 , 1948 .
+Answer: [{'August': 'Miscellaneous'}]
+Sentence: The 2007 event is being held from September 10 till September 16 .
+Answer: [{'2007 event': 'Miscellaneous'}, {'September 10': 'Miscellaneous'}, {'September 16': 'Miscellaneous'}]
+Sentence: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+Answer: [{'Matt Wachter': 'Person'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: They performed their first gig in Galway in December 2006 .
+Answer: [{'Galway': 'Location'}]
+Sentence: Prior to 2001 , the event was held in Kuala Lumpur .
+Answer: [{'Kuala Lumpur': 'Location'}]
+Sentence: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+Answer: [{'21 february 2005': 'Miscellaneous'}]
+Sentence: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+Answer: [{'Spring 2007': 'Miscellaneous'}, {'The Used': 'Organization'}, {'Taste of Chaos': 'Miscellaneous'}, {'Europe': 'Location'}, {'Linkin Park': 'Organization'}]
+Sentence: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+Answer: [{'MTV2': 'Organization'}]
+Sentence: He is the lead guitarist and songwriter of the band Gigi .
+Answer: [{'Gigi': 'Organization'}]
+Sentence: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+Answer: [{'Jared Leto': 'Person'}, {'Shannon': 'Person'}, {'30 Seconds to Mars': 'Organization'}]
+
+--------------------------------------------------
+ANSWER   :  [
+    {"Sentence1": 1},
+    {"Reason1": "The sentence only provides a single named entity 'Angelina' which is not present in the target sentence."},
+    {"Sentence2": 1},
+    {"Reason2": "The sentence only provides a single named entity 'August' which is not present in the target sentence."},
+    {"Sentence3": 1},
+    {"Reason3": "The sentence provides multiple named entities related to dates ('2007 event', 'September 10', 'September 16') which are not present in the target sentence."},
+    {"Sentence4": 1},
+    {"Reason4": "The sentence only provides a single named entity 'Matt Wachter' which is not present in the target sentence."},
+    {"Sentence5": 1},
+    {"Reason5": "The sentence only provides a single named entity 'Virgin Records' which is not present in the target sentence."},
+    {"Sentence6": 1},
+    {"Reason6": "The sentence only provides a single named entity 'Siouxsie' which is not present in the target sentence."},
+    {"Sentence7": 1},
+    {"Reason7": "The sentence only provides a single named entity 'Mattias Noren' which is not present in the target sentence."},
+    {"Sentence8": 1},
+    {"Reason8": "The sentence provides multiple named entities related to organizations ('Head Automatica', 'The Receiving End of Sirens', 'Cobra Starship', 'Street Drum Corps') which are not present in the target sentence."},
+    {"Sentence9": 1},
+    {"Reason9": "The sentence provides multiple named entities related to persons and organizations ('Josh Abraham', 'Orgy', 'Velvet Revolver', 'Linkin Park') which are not present in the target sentence."},
+    {"Sentence10": 1},
+    {"Reason10": "The sentence only provides a single named entity 'Galway' which is not present in the target sentence."},
+    {"Sentence11": 1},
+    {"Reason11": "The sentence only provides a single named entity 'Kuala Lumpur' which is not present in the target sentence."},
+    {"Sentence12": 1},
+    {"Reason12": "The sentence only provides a single named entity '21 february 2005' which is not present in the target sentence."},
+    {"Sentence13": 1},
+    {"Reason13": "The sentence provides multiple named entities related to miscellaneous, organizations, and locations ('Spring 2007', 'The Used', 'Taste of Chaos', 'Europe', 'Linkin Park') which are not present in the target sentence."},
+    {"Sentence14": 1},
+    {"Reason14": "The sentence only provides a single named entity 'MTV2' which is not present in the target sentence."},
+    {"Sentence15": 1},
+    {"Reason15": "The sentence only provides a single named entity 'Gigi' which is not present in the target sentence."},
+    {"Sentence16": 5},
+    {"Reason16": "The sentence provides multiple named entities related to persons and organizations ('Jared Leto', 'Shannon', '30 Seconds to Mars') which are present in the target sentence."}
+]
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'On August 8th , 2007 , Kerrang ! announced that 30 Seconds to Mars has been nominated for two categories of the Kerrang !'
+Consider the above helpfulness scores, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: He has one daughter , Angelina , born in December 2004 .
+Answer: [{'Angelina': 'Person'}]
+Sentence: The circuit was inaugurated on August , 7 , 1948 .
+Answer: [{'August': 'Miscellaneous'}]
+Sentence: The 2007 event is being held from September 10 till September 16 .
+Answer: [{'2007 event': 'Miscellaneous'}, {'September 10': 'Miscellaneous'}, {'September 16': 'Miscellaneous'}]
+Sentence: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+Answer: [{'Matt Wachter': 'Person'}]
+Sentence: According to an interview from Virgin Records , the band 's name
+Answer: [{'Virgin Records': 'Organization'}]
+Sentence: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+Answer: [{'Siouxsie': 'Person'}]
+Sentence: The album cover 's artwork was provided by Mattias Noren .
+Answer: [{'Mattias Noren': 'Person'}]
+Sentence: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+Answer: [{'Head Automatica': 'Organization'}, {'The Receiving End of Sirens': 'Organization'}, {'Cobra Starship': 'Organization'}, {'Street Drum Corps': 'Organization'}]
+Sentence: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+Answer: [{'Josh Abraham': 'Person'}, {'Orgy': 'Organization'}, {'Velvet Revolver': 'Organization'}, {'Linkin Park': 'Organization'}]
+Sentence: They performed their first gig in Galway in December 2006 .
+Answer: [{'Galway': 'Location'}]
+Sentence: Prior to 2001 , the event was held in Kuala Lumpur .
+Answer: [{'Kuala Lumpur': 'Location'}]
+Sentence: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+Answer: [{'21 february 2005': 'Miscellaneous'}]
+Sentence: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+Answer: [{'Spring 2007': 'Miscellaneous'}, {'The Used': 'Organization'}, {'Taste of Chaos': 'Miscellaneous'}, {'Europe': 'Location'}, {'Linkin Park': 'Organization'}]
+Sentence: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+Answer: [{'MTV2': 'Organization'}]
+Sentence: He is the lead guitarist and songwriter of the band Gigi .
+Answer: [{'Gigi': 'Organization'}]
+Sentence: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+Answer: [{'Jared Leto': 'Person'}, {'Shannon': 'Person'}, {'30 Seconds to Mars': 'Organization'}]
+Sentence: On August 8th , 2007 , Kerrang ! announced that 30 Seconds to Mars has been nominated for two categories of the Kerrang !
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Kerrang": "Organization"}, {"30 Seconds to Mars": "Organization"}, {"Kerrang": "Organization"}]
+==================================================
+
+
+
+
+

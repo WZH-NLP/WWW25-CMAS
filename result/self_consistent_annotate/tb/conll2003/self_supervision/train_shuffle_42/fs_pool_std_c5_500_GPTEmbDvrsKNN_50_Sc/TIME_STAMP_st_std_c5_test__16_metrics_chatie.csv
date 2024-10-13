@@ -1,0 +1,6 @@
+Type,Gold count,Gold rate,Pred count,Pred rate,Correct count,Prec,Rec,F1
+Organization,129,28.60,101,13.69,50,49.50,38.76,43.48
+Person,145,32.15,167,22.63,136,81.44,93.79,87.18
+Location,127,28.16,201,27.24,107,53.23,84.25,65.24
+Miscellaneous,50,11.09,269,36.45,5,1.86,10.00,3.13
+ToTal,451,100,738,100,298,40.38,66.08,50.13

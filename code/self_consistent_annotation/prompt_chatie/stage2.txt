@@ -1,0 +1,1 @@
+According to the sentence above, please output the entities of ‘<ner_type>’ in the the following JSON format: [{\"Entity Name\": \"Entity Label\"}].

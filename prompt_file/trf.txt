@@ -1,0 +1,1541 @@
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'UK Edition came with the OSC-DIS video , and most of the tracks were re-engineered .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Organization']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: His parents were encouraged by a friend to develop the child 's musical talents and he studied classical piano in the United States .
+TRFs set: ['father', 'songs', 'French', 'song', 'south']
+>>>
+Example2: In this , he is often cited as being influenced by pianist Eddy Duchin .
+TRFs set: ['songs', 'French', 'Bobick', 'Player', 'father']
+>>>
+Example3: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+TRFs set: ['songs', 'song', 'Cary', 'French', 'south']
+>>>
+Example4: The album 's title is an amalgamation of the words ' digital ' and ' analogue ' , two of the principal technologies that have been used in sound recording .
+TRFs set: ['songs', 'song', 'time', 'French', 'Institute']
+>>>
+Example5: The album cover 's artwork was provided by Mattias Noren .
+TRFs set: ['songs', 'song', 'Beautiful', 'Cary', 'Player']
+>>>
+Example6: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+TRFs set: ['songs', 'song', 'SR', 'French', 'Beautiful']
+>>>
+Example7: Darkness Death Doom is the sixth album by Runemagick .
+TRFs set: ['songs', 'song', 'Kill', 'Cary', 'Bobick']
+>>>
+Example8: After his naval discharge , Langejans took a job at Meyer Music in Holland , where he was trained in the intricacies of instrument repair and electronics .
+TRFs set: ['songs', 'Friedrich', 'Harrison', 'song', 'French']
+>>>
+Example9: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+TRFs set: ['songs', 'song', 'SR', 'Cary', 'CBS']
+>>>
+Example10: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+TRFs set: ['station', 'Milepost', 'League', 'south', 'Bobick']
+>>>
+Example11: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+TRFs set: ['songs', 'Cary', 'song', 'time', 'players']
+>>>
+Example12: In 1971 , he began to design and build his own guitars , originally bearing the name Del's .
+TRFs set: ['father', 'Institute', 'Harrison', 'songs', 'Bobick']
+>>>
+Example13: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+TRFs set: ['songs', 'song', 'Cary', 'south', 'Harrison']
+>>>
+Example14: As a young pianist , he toured Europe performing in many capitals .
+TRFs set: ['songs', 'French', 'song', 'Friedrich', 'father']
+>>>
+Example15: According to an interview from Virgin Records , the band 's name
+TRFs set: ['songs', 'song', 'village', 'hit', 'CBS']
+>>>
+Example16: The Langejans Dualette is a two sided guitar which was custom made for Thom Bresh .
+TRFs set: ['Bobick', 'songs', 'song', 'French', 'Beautiful']
+
+--------------------------------------------------
+ANSWER   :  ['video', 'tracks']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'UK Edition came with the OSC-DIS video , and most of the tracks were re-engineered .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: UK Edition came with the OSC-DIS video , and most of the tracks were re-engineered .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"OSC-DIS video": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'During this time Couch 's Division was detached from the Army and was occupied with guarding the fords on the Potomac .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Organization', 'Location']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: The operation moved from Barrack Street to 340 Hay Street just after the purchase by the VBN in 1963 .
+TRFs set: ['station', 'Harrison', 'Bobick', 'village', 'located']
+>>>
+Example2: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+TRFs set: ['MAAA', 'League', 'Bobick', 'Institute', 'players']
+>>>
+Example3: Throughout the spring and into early summer of 1864 , the 139th fought in Grant 's Overland Campaign and the early stages of the Siege of Petersburg .
+TRFs set: ['Harrison', 'south', 'SR', 'League', 'station']
+>>>
+Example4: The 139th was transferred in October 1862 to the VI Corps .
+TRFs set: ['Harrison', 'south', 'Institute', 'located', 'village']
+>>>
+Example5: By December 1864 , they were back in the siege lines of Petersburg .
+TRFs set: ['south', 'Harrison', 'station', 'SR', 'located']
+>>>
+Example6: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+TRFs set: ['Air', 'Institute', 'south', 'station', 'University']
+>>>
+Example7: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+TRFs set: ['Maine', 'station', 'south', 'village', 'Milepost']
+>>>
+Example8: Fourth Air Force , 27 March 1943 ; Army Service Forces , 6 May 1943 ; Eighth Air Force , 2 June 1943 ; VIII Fighter Command , 4 June 1943 ; 2 Bombardment ( later , 2 Air ) Division , 15 September 1944 ; 3 Air Division , 1 June 1945 -- 21 November 1945 .
+TRFs set: ['Air', 'Harrison', 'south', 'League', 'time']
+>>>
+Example9: Meanwhile , the area around the reservoir had come to be known as Lincoln Reservoir Park .
+TRFs set: ['village', 'located', 'Harrison', 'station', 'south']
+>>>
+Example10: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+TRFs set: ['French', 'Kill', 'south', 'Cary', 'Portuguese']
+>>>
+Example11: Played defensive end for the Patriots in 1971 .
+TRFs set: ['Harrison', 'Player', 'League', 'Maine', 'father']
+>>>
+Example12: Determinated to bar the expedition 's road , Sarraounia wrote to Voulet a provocative letter full of insults ; the French took up the challenge , and on April 15 left the camp marching towards the villages of Lougou and Tougana , where Sarraounia had concentrated her forces .
+TRFs set: ['French', 'village', 'Portuguese', 'south', 'Cary']
+>>>
+Example13: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+TRFs set: ['Harrison', 'Player', 'League', 'players', 'father']
+>>>
+Example14: The Netherlands East Indies government operated from Australia during the war .
+TRFs set: ['south', 'Harrison', 'French', 'Portuguese', 'located']
+>>>
+Example15: The circuit was inaugurated on August , 7 , 1948 .
+TRFs set: ['Institute', 'station', 'village', 'University', 'CBS']
+>>>
+Example16: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+TRFs set: ['Harrison', 'south', 'village', 'Cary', 'Lie']
+
+--------------------------------------------------
+ANSWER   :  ['Couch', 'Division', 'Army', 'fords', 'Potomac']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'During this time Couch 's Division was detached from the Army and was occupied with guarding the fords on the Potomac .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: During this time Couch 's Division was detached from the Army and was occupied with guarding the fords on the Potomac .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Couch": "Person"}, {"Division": "Organization"}, {"Army": "Organization"}, {"Potomac": "Location"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'At the Battle of Gettysburg in July , it helped defend the left flank of the Union army .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Location', 'Miscellaneous', 'Organization']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: Friedrich the Great was Lessing 's patron , and he extended royal protection and sponsorship to Mendelssohn , as well .
+TRFs set: ['Friedrich', 'father', 'French', 'Harrison', 'Cary']
+>>>
+Example2: After Diego Silang 's death , his wife , Josefa Gabriela , took over the revolt and fought courageously .
+TRFs set: ['Angela', 'Friedrich', 'father', 'Portuguese', 'Lie']
+>>>
+Example3: After leaving French Sudan in January 1899 , they ruthlessly subjected the native peoples , meeting little resistance .
+TRFs set: ['French', 'south', 'Portuguese', 'Harrison', 'village']
+>>>
+Example4: Fourth Air Force , 27 March 1943 ; Army Service Forces , 6 May 1943 ; Eighth Air Force , 2 June 1943 ; VIII Fighter Command , 4 June 1943 ; 2 Bombardment ( later , 2 Air ) Division , 15 September 1944 ; 3 Air Division , 1 June 1945 -- 21 November 1945 .
+TRFs set: ['Air', 'Harrison', 'south', 'League', 'time']
+>>>
+Example5: Meanwhile , the area around the reservoir had come to be known as Lincoln Reservoir Park .
+TRFs set: ['village', 'located', 'Harrison', 'station', 'south']
+>>>
+Example6: Paul Joalland called " one of the hottest moment of the campaign " .
+TRFs set: ['hit', 'League', 'Player', 'Harrison', 'Hall']
+>>>
+Example7: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+TRFs set: ['south', 'station', 'SR', 'Bullock', 'Milepost']
+>>>
+Example8: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+TRFs set: ['south', 'Lotto', 'French', 'Harrison', 'League']
+>>>
+Example9: The circuit was inaugurated on August , 7 , 1948 .
+TRFs set: ['Institute', 'station', 'village', 'University', 'CBS']
+>>>
+Example10: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+TRFs set: ['Maine', 'station', 'south', 'village', 'Milepost']
+>>>
+Example11: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+TRFs set: ['village', 'Bobick', 'Kill', 'French', 'Beautiful']
+>>>
+Example12: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+TRFs set: ['Air', 'Institute', 'south', 'station', 'University']
+>>>
+Example13: Played defensive end for the Patriots in 1971 .
+TRFs set: ['Harrison', 'Player', 'League', 'Maine', 'father']
+>>>
+Example14: He received his doctorate in 1862 , and subsequently practiced medicine in Berlin and Würzburg .
+TRFs set: ['Friedrich', 'Institute', 'University', 'Harrison', 'French']
+>>>
+Example15: The 139th was transferred in October 1862 to the VI Corps .
+TRFs set: ['Harrison', 'south', 'Institute', 'located', 'village']
+>>>
+Example16: Its fighter squadrons flew air defense interceptions over Spanish airspace .
+TRFs set: ['Air', 'Portuguese', 'French', 'south', 'SR']
+
+--------------------------------------------------
+ANSWER   :  ['Battle', 'Gettysburg', 'July', 'Union', 'army']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'At the Battle of Gettysburg in July , it helped defend the left flank of the Union army .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: At the Battle of Gettysburg in July , it helped defend the left flank of the Union army .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Gettysburg": "Location"}, {"July": "Miscellaneous"}, {"Union": "Organization"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The 139th supported Sheridan in the Appomattox Campaign and fought in the Battle of Sayler 's Creek .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Organization', 'Location']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+TRFs set: ['station', 'SR', 'Milepost', 'south', 'Bobick']
+>>>
+Example2: He was re-elected in the 1955 and 1959 elections and served in the legislature until his death in 1961 .
+TRFs set: ['Harrison', 'father', 'Cary', 'University', 'Lie']
+>>>
+Example3: The 139th was transferred in October 1862 to the VI Corps .
+TRFs set: ['Harrison', 'south', 'Institute', 'located', 'village']
+>>>
+Example4: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+TRFs set: ['Harrison', 'south', 'village', 'Cary', 'Lie']
+>>>
+Example5: By December 1864 , they were back in the siege lines of Petersburg .
+TRFs set: ['south', 'Harrison', 'station', 'SR', 'located']
+>>>
+Example6: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+TRFs set: ['French', 'Kill', 'south', 'Cary', 'Portuguese']
+>>>
+Example7: It was the 89th season of play for the Falcons .
+TRFs set: ['League', 'players', 'Player', 'Cary', 'south']
+>>>
+Example8: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+TRFs set: ['Maine', 'station', 'south', 'village', 'Milepost']
+>>>
+Example9: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+TRFs set: ['Harrison', 'Player', 'League', 'players', 'father']
+>>>
+Example10: After leaving French Sudan in January 1899 , they ruthlessly subjected the native peoples , meeting little resistance .
+TRFs set: ['French', 'south', 'Portuguese', 'Harrison', 'village']
+>>>
+Example11: Determinated to bar the expedition 's road , Sarraounia wrote to Voulet a provocative letter full of insults ; the French took up the challenge , and on April 15 left the camp marching towards the villages of Lougou and Tougana , where Sarraounia had concentrated her forces .
+TRFs set: ['French', 'village', 'Portuguese', 'south', 'Cary']
+>>>
+Example12: Meanwhile , the area around the reservoir had come to be known as Lincoln Reservoir Park .
+TRFs set: ['village', 'located', 'Harrison', 'station', 'south']
+>>>
+Example13: Afterwards , Wang Shichong , seeing no other choice , surrendered Luoyang .
+TRFs set: ['Lie', 'Friedrich', 'Harrison', 'south', 'Bullock']
+>>>
+Example14: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+TRFs set: ['Air', 'Institute', 'south', 'station', 'University']
+>>>
+Example15: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+TRFs set: ['south', 'station', 'SR', 'Bullock', 'Milepost']
+>>>
+Example16: After Diego Silang 's death , his wife , Josefa Gabriela , took over the revolt and fought courageously .
+TRFs set: ['Angela', 'Friedrich', 'father', 'Portuguese', 'Lie']
+
+--------------------------------------------------
+ANSWER   :  ['Sheridan', 'Appomattox Campaign', 'Battle of Sayler\'s Creek']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The 139th supported Sheridan in the Appomattox Campaign and fought in the Battle of Sayler 's Creek .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: The 139th supported Sheridan in the Appomattox Campaign and fought in the Battle of Sayler 's Creek .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Sheridan": "Person"}, {"Appomattox Campaign": "Miscellaneous"}, {"Battle of Sayler 's Creek": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Two cars were demolished and the two following cars were telescoped .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Miscellaneous']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: F-94 Starfire , 1952 -- 1954 ; F-86 Sabre , 1953 -- 1954 .
+TRFs set: ['Air', 'French', 'SR', 'south', 'Bobick']
+>>>
+Example2: Although there were plans for races at Zandvoort before World War II , the first street race was held on June 3 , 1939 .
+TRFs set: ['Bobick', 'Lotto', 'Harrison', 'time', 'French']
+>>>
+Example3: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+TRFs set: ['Maine', 'Milepost', 'Bridgton', 'station', 'Cary']
+>>>
+Example4: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+TRFs set: ['Bullock', 'TraX', 'station', 'Bobick', 'south']
+>>>
+Example5: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+TRFs set: ['station', 'south', 'Milepost', 'located', 'Bobick']
+>>>
+Example6: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+TRFs set: ['Milepost', 'station', 'near', 'south', 'Bobick']
+>>>
+Example7: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+TRFs set: ['station', 'Milepost', 'League', 'south', 'Bobick']
+>>>
+Example8: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+TRFs set: ['village', 'Bobick', 'Kill', 'French', 'Beautiful']
+>>>
+Example9: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+TRFs set: ['French', 'Kill', 'south', 'Cary', 'Portuguese']
+>>>
+Example10: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+TRFs set: ['south', 'station', 'SR', 'Bullock', 'Milepost']
+>>>
+Example11: The second cancer went into remission .
+TRFs set: ['Cary', 'hit', 'Lie', 'Beautiful', 'SR']
+>>>
+Example12: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+TRFs set: ['Maine', 'station', 'south', 'village', 'Milepost']
+>>>
+Example13: MTV and ESPN thrived and gave rise to additional companion channels within a short time , while the CBS Cable channel folded after just over 14 months in operation .
+TRFs set: ['CBS', 'League', 'time', 'station', 'Cary']
+>>>
+Example14: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+TRFs set: ['Bridgton', 'Maine', 'Harrison', 'Milepost', 'Bullock']
+>>>
+Example15: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+TRFs set: ['station', 'south', 'Bobick', 'hit', 'TraX']
+>>>
+Example16: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+TRFs set: ['hit', 'Kill', 'Player', 'players', 'Lotto']
+
+--------------------------------------------------
+ANSWER   :  ['cars', 'cars', 'telescoped']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Two cars were demolished and the two following cars were telescoped .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Two cars were demolished and the two following cars were telescoped .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  []
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The second car of the West Jersey train was also carried into the ditch , the third and fourth cars being telescoped .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Location']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+TRFs set: ['station', 'Bridgton', 'village', 'Milepost', 'Bobick']
+>>>
+Example2: The train services are operated by the Ffestiniog Railway Company .
+TRFs set: ['station', 'Institute', 'TraX', 'village', 'south']
+>>>
+Example3: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+TRFs set: ['station', 'south', 'Milepost', 'located', 'Bobick']
+>>>
+Example4: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+TRFs set: ['Maine', 'Milepost', 'Bridgton', 'station', 'Cary']
+>>>
+Example5: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+TRFs set: ['south', 'station', 'SR', 'Bullock', 'Milepost']
+>>>
+Example6: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+TRFs set: ['Bullock', 'TraX', 'station', 'Bobick', 'south']
+>>>
+Example7: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+TRFs set: ['Maine', 'station', 'south', 'village', 'Milepost']
+>>>
+Example8: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+TRFs set: ['station', 'Milepost', 'League', 'south', 'Bobick']
+>>>
+Example9: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+TRFs set: ['Bridgton', 'Maine', 'Harrison', 'Milepost', 'Bullock']
+>>>
+Example10: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+TRFs set: ['station', 'SR', 'Milepost', 'south', 'Bobick']
+>>>
+Example11: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+TRFs set: ['Milepost', 'station', 'near', 'south', 'Bobick']
+>>>
+Example12: Milepost 3 : Summit - highest point on the railroad .
+TRFs set: ['Milepost', 'station', 'Maine', 'south', 'MAAA']
+>>>
+Example13: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+TRFs set: ['French', 'Kill', 'south', 'Cary', 'Portuguese']
+>>>
+Example14: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+TRFs set: ['station', 'Cary', 'hit', 'south', 'time']
+>>>
+Example15: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+TRFs set: ['station', 'south', 'Bobick', 'hit', 'TraX']
+>>>
+Example16: The second cancer went into remission .
+TRFs set: ['Cary', 'hit', 'Lie', 'Beautiful', 'SR']
+
+--------------------------------------------------
+ANSWER   :  ['train', 'cars', 'ditch', 'telescoped']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The second car of the West Jersey train was also carried into the ditch , the third and fourth cars being telescoped .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: The second car of the West Jersey train was also carried into the ditch , the third and fourth cars being telescoped .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"West Jersey": "Location"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'As onlookers watched through the night , the mangled and burned bodies of the dead were carried from the wreckage which trapped them and laid side by side on the gravel bank near the track , with no other covering than the few newspapers gathered from the passengers .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Miscellaneous']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: Chris Penley 's death gave 9 people vital organs .
+TRFs set: ['Kill', 'Cary', 'father', 'Harrison', 'Player']
+>>>
+Example2: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+TRFs set: ['station', 'Bridgton', 'village', 'Milepost', 'Bobick']
+>>>
+Example3: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+TRFs set: ['Harrison', 'Cary', 'station', 'father', 'Lie']
+>>>
+Example4: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+TRFs set: ['station', 'south', 'Bobick', 'hit', 'TraX']
+>>>
+Example5: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+TRFs set: ['French', 'Kill', 'south', 'Cary', 'Portuguese']
+>>>
+Example6: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+TRFs set: ['south', 'station', 'SR', 'Bullock', 'Milepost']
+>>>
+Example7: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+TRFs set: ['Bullock', 'TraX', 'station', 'Bobick', 'south']
+>>>
+Example8: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+TRFs set: ['hit', 'Kill', 'Player', 'players', 'Lotto']
+>>>
+Example9: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+TRFs set: ['Milepost', 'station', 'near', 'south', 'Bobick']
+>>>
+Example10: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+TRFs set: ['Maine', 'Milepost', 'Bridgton', 'station', 'Cary']
+>>>
+Example11: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+TRFs set: ['station', 'SR', 'Milepost', 'south', 'Bobick']
+>>>
+Example12: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+TRFs set: ['Maine', 'station', 'south', 'village', 'Milepost']
+>>>
+Example13: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+TRFs set: ['station', 'south', 'Milepost', 'located', 'Bobick']
+>>>
+Example14: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+TRFs set: ['station', 'Milepost', 'League', 'south', 'Bobick']
+>>>
+Example15: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+TRFs set: ['village', 'Bobick', 'Kill', 'French', 'Beautiful']
+>>>
+Example16: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+TRFs set: ['Harrison', 'south', 'village', 'Cary', 'Lie']
+
+--------------------------------------------------
+ANSWER   :  ['bodies', 'dead', 'wreckage', 'passengers', 'newspapers']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'As onlookers watched through the night , the mangled and burned bodies of the dead were carried from the wreckage which trapped them and laid side by side on the gravel bank near the track , with no other covering than the few newspapers gathered from the passengers .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: As onlookers watched through the night , the mangled and burned bodies of the dead were carried from the wreckage which trapped them and laid side by side on the gravel bank near the track , with no other covering than the few newspapers gathered from the passengers .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"onlookers": "Miscellaneous"}, {"bodies": "Miscellaneous"}, {"wreckage": "Miscellaneous"}, {"passengers": "Miscellaneous"}, {"newspapers": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'James W. Hoyt , Secretary of the New Jersey Department of Public Safety , immediately upon learning of the extent of the accident , telegraphed for the Philadelphia Medical Emergency Corps , fifteen of whom responded , and hurried to Atlantic City on a special train which left Philadelphia at 10:45 pm .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Person', 'Organization', 'Location']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+TRFs set: ['station', 'Milepost', 'League', 'south', 'Bobick']
+>>>
+Example2: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+TRFs set: ['hit', 'Kill', 'Player', 'players', 'Lotto']
+>>>
+Example3: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+TRFs set: ['village', 'Bobick', 'Kill', 'French', 'Beautiful']
+>>>
+Example4: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+TRFs set: ['station', 'south', 'Milepost', 'located', 'Bobick']
+>>>
+Example5: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+TRFs set: ['station', 'south', 'Bobick', 'hit', 'TraX']
+>>>
+Example6: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+TRFs set: ['Bridgton', 'Maine', 'Harrison', 'Milepost', 'Bullock']
+>>>
+Example7: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+TRFs set: ['station', 'Cary', 'hit', 'south', 'time']
+>>>
+Example8: Chris Penley 's death gave 9 people vital organs .
+TRFs set: ['Kill', 'Cary', 'father', 'Harrison', 'Player']
+>>>
+Example9: However this was not the first time Hitzig had experienced the interaction between the brain and electricity ; earlier in his career as a physician working with the Prussian Army he experimented on wounded soldiers whose skulls were fractured by bullets .
+TRFs set: ['Friedrich', 'hit', 'Harrison', 'French', 'Bobick']
+>>>
+Example10: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+TRFs set: ['Milepost', 'station', 'near', 'south', 'Bobick']
+>>>
+Example11: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+TRFs set: ['south', 'station', 'SR', 'Bullock', 'Milepost']
+>>>
+Example12: During the early nineties the station 's current affairs / talkback program hosted by Sattler , Maumill , Mabury , Peter Newman , Gary Carvolth and Rob Broadfield achieved considerable success in spite of the ever increasing level of racing broadcasts on the station .
+TRFs set: ['CBS', 'station', 'Cary', 'MAAA', 'Harrison']
+>>>
+Example13: The circuit was inaugurated on August , 7 , 1948 .
+TRFs set: ['Institute', 'station', 'village', 'University', 'CBS']
+>>>
+Example14: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+TRFs set: ['Maine', 'station', 'south', 'village', 'Milepost']
+>>>
+Example15: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+TRFs set: ['Harrison', 'Cary', 'station', 'father', 'Lie']
+>>>
+Example16: The 139th was transferred in October 1862 to the VI Corps .
+TRFs set: ['Harrison', 'south', 'Institute', 'located', 'village']
+
+--------------------------------------------------
+ANSWER   :  ['James', 'Hoyt', 'Secretary', 'New Jersey Department of Public Safety', 'Philadelphia Medical Emergency Corps', 'Atlantic City', 'Philadelphia']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'James W. Hoyt , Secretary of the New Jersey Department of Public Safety , immediately upon learning of the extent of the accident , telegraphed for the Philadelphia Medical Emergency Corps , fifteen of whom responded , and hurried to Atlantic City on a special train which left Philadelphia at 10:45 pm .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: James W. Hoyt , Secretary of the New Jersey Department of Public Safety , immediately upon learning of the extent of the accident , telegraphed for the Philadelphia Medical Emergency Corps , fifteen of whom responded , and hurried to Atlantic City on a special train which left Philadelphia at 10:45 pm .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"James W. Hoyt": "Person"}, {"New Jersey Department of Public Safety": "Organization"}, {"Philadelphia Medical Emergency Corps": "Organization"}, {"Atlantic City": "Location"}, {"Philadelphia": "Location"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'He went directly into the block tower and questioned operator George F. Hauser. Houser told him that he thought the excursion train had time to cross the tracks of the Reading before the express got there and he set the " clear " signal for the West Jersey train .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Person', 'Organization', 'Location']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: Frazier himself was approaching retirement and focusing on upcoming paydays with protege Bobick .
+TRFs set: ['Bobick', 'Harrison', 'father', 'Bullock', 'Cary']
+>>>
+Example2: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+TRFs set: ['Bullock', 'TraX', 'station', 'Bobick', 'south']
+>>>
+Example3: There were three poles with semaphores controlled by the tower on the reading tracks and two on the West Jersey .
+TRFs set: ['station', 'south', 'Milepost', 'located', 'Bobick']
+>>>
+Example4: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+TRFs set: ['station', 'Cary', 'hit', 'south', 'time']
+>>>
+Example5: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+TRFs set: ['Milepost', 'station', 'near', 'south', 'Bobick']
+>>>
+Example6: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+TRFs set: ['south', 'station', 'SR', 'Bullock', 'Milepost']
+>>>
+Example7: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+TRFs set: ['station', 'south', 'Bobick', 'hit', 'TraX']
+>>>
+Example8: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+TRFs set: ['station', 'SR', 'Milepost', 'south', 'Bobick']
+>>>
+Example9: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+TRFs set: ['Maine', 'station', 'south', 'village', 'Milepost']
+>>>
+Example10: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+TRFs set: ['Bridgton', 'Maine', 'Harrison', 'Milepost', 'Bullock']
+>>>
+Example11: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+TRFs set: ['station', 'Bridgton', 'village', 'Milepost', 'Bobick']
+>>>
+Example12: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+TRFs set: ['Maine', 'Milepost', 'Bridgton', 'station', 'Cary']
+>>>
+Example13: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+TRFs set: ['Harrison', 'Cary', 'station', 'father', 'Lie']
+>>>
+Example14: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+TRFs set: ['Air', 'Institute', 'south', 'station', 'University']
+>>>
+Example15: Milepost 3 : Summit - highest point on the railroad .
+TRFs set: ['Milepost', 'station', 'Maine', 'south', 'MAAA']
+>>>
+Example16: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+TRFs set: ['station', 'Milepost', 'League', 'south', 'Bobick']
+
+--------------------------------------------------
+ANSWER   :  ['Reading', 'tracks', 'signal', 'train', 'operator']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'He went directly into the block tower and questioned operator George F. Hauser. Houser told him that he thought the excursion train had time to cross the tracks of the Reading before the express got there and he set the " clear " signal for the West Jersey train .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: He went directly into the block tower and questioned operator George F. Hauser. Houser told him that he thought the excursion train had time to cross the tracks of the Reading before the express got there and he set the " clear " signal for the West Jersey train .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"George F. Hauser": "Person"}, {"Reading": "Location"}, {"West Jersey": "Location"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Before Hauser could make a further explanation to the coroner he received an order from the railroad officials to say nothing .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Person', 'Organization']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: New script editor Eric Saward requested that Bailey devise another story idea , but neither the submitted outlines for May Time ( later renamed Manwatch ) nor The Children of Seth were taken further .
+TRFs set: ['Cary', 'Bobick', 'CBS', 'songs', 'song']
+>>>
+Example2: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+TRFs set: ['Maine', 'station', 'south', 'village', 'Milepost']
+>>>
+Example3: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+TRFs set: ['MAAA', 'League', 'Bobick', 'Institute', 'players']
+>>>
+Example4: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+TRFs set: ['Bridgton', 'Maine', 'Harrison', 'Milepost', 'Bullock']
+>>>
+Example5: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+TRFs set: ['village', 'Bobick', 'Kill', 'French', 'Beautiful']
+>>>
+Example6: They performed these studies at the home of Fritsch because the University of Berlin would not allow such experimentation in their laboratories .
+TRFs set: ['Friedrich', 'University', 'Institute', 'French', 'Cary']
+>>>
+Example7: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+TRFs set: ['station', 'south', 'Bobick', 'hit', 'TraX']
+>>>
+Example8: Stanley and cohorts were found liable for defamation and making death threats .
+TRFs set: ['Kill', 'Cary', 'Harrison', 'League', 'Lie']
+>>>
+Example9: At the CIA fair , Hayley gets into an argument with Director Avery Bullock .
+TRFs set: ['Bullock', 'Cary', 'Angela', 'Harrison', 'Lie']
+>>>
+Example10: Indeed , the inscriptions on the Cup when it was successfully defended in 1894 only stated " Montreal HC " .
+TRFs set: ['French', 'League', 'Harrison', 'University', 'Portuguese']
+>>>
+Example11: However this was not the first time Hitzig had experienced the interaction between the brain and electricity ; earlier in his career as a physician working with the Prussian Army he experimented on wounded soldiers whose skulls were fractured by bullets .
+TRFs set: ['Friedrich', 'hit', 'Harrison', 'French', 'Bobick']
+>>>
+Example12: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+TRFs set: ['station', 'Milepost', 'League', 'south', 'Bobick']
+>>>
+Example13: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+TRFs set: ['station', 'SR', 'Milepost', 'south', 'Bobick']
+>>>
+Example14: There was no runaround track ; so southbound B&SR locomotives uncoupled their train on the main line , moved into the yard , threw a turnout , and let their train roll past them into the yard by gravity to avoid being trapped at the end of the spur .
+TRFs set: ['south', 'station', 'SR', 'Bullock', 'Milepost']
+>>>
+Example15: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+TRFs set: ['Harrison', 'Cary', 'station', 'father', 'Lie']
+>>>
+Example16: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+TRFs set: ['Bullock', 'TraX', 'station', 'Bobick', 'south']
+
+--------------------------------------------------
+ANSWER   :  ['coroner', 'order', 'railroad', 'officials']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Before Hauser could make a further explanation to the coroner he received an order from the railroad officials to say nothing .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Before Hauser could make a further explanation to the coroner he received an order from the railroad officials to say nothing .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Hauser": "Person"}, {"coroner": "Person"}, {"railroad": "Organization"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'His reputation was that of an experienced engineer and a man of exceptionally high moral character , and not of a reckless or careless disposition .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Person']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: The engine of the Reading train was thrown to the other side of the track , carrying with it the first coach .
+TRFs set: ['station', 'south', 'Bobick', 'hit', 'TraX']
+>>>
+Example2: He won the Steele Prize from the American Mathematical Society in 1991 for his work in differential geometry .
+TRFs set: ['Harrison', 'Cary', 'University', 'SR', 'Institute']
+>>>
+Example3: Darkness fell quickly , and the work of rescuing the injured and recovering the bodies of the dead was carried out under the glare of huge bonfires .
+TRFs set: ['village', 'Bobick', 'Kill', 'French', 'Beautiful']
+>>>
+Example4: Another Nobel laureate scientist there was Richard J. Roberts .
+TRFs set: ['Harrison', 'University', 'Cary', 'Institute', 'Friedrich']
+>>>
+Example5: Albert Wren was an Ontario politician .
+TRFs set: ['Harrison', 'Bullock', 'father', 'Bridgton', 'University']
+>>>
+Example6: His brother Rodney also was a professional boxer with a 37-7 record .
+TRFs set: ['Harrison', 'father', 'Bullock', 'Carder', 'SR']
+>>>
+Example7: Bobick had now improved enough as a boxer to be a legitimate title threat .
+TRFs set: ['Bobick', 'Bullock', 'Harrison', 'Cary', 'Carder']
+>>>
+Example8: His parents were encouraged by a friend to develop the child 's musical talents and he studied classical piano in the United States .
+TRFs set: ['father', 'songs', 'French', 'song', 'south']
+>>>
+Example9: Known as the " Poet of the Piano " , Carmen Cavallaro showed a gift for music from age 3 , picking out tunes on a toy piano .
+TRFs set: ['songs', 'song', 'Cary', 'Player', 'Carder']
+>>>
+Example10: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+TRFs set: ['Harrison', 'Cary', 'station', 'father', 'Lie']
+>>>
+Example11: In 1950 he received his Ph.D. from Princeton University , where his advisor was Salomon Bochner .
+TRFs set: ['University', 'father', 'Institute', 'Harrison', 'Bobick']
+>>>
+Example12: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+TRFs set: ['Harrison', 'Player', 'League', 'players', 'father']
+>>>
+Example13: In this , he is often cited as being influenced by pianist Eddy Duchin .
+TRFs set: ['songs', 'French', 'Bobick', 'Player', 'father']
+>>>
+Example14: As a young pianist , he toured Europe performing in many capitals .
+TRFs set: ['songs', 'French', 'song', 'Friedrich', 'father']
+>>>
+Example15: Hitzig is remembered for his work concerning the interaction between electrical current and the brain .
+TRFs set: ['Friedrich', 'hit', 'Harrison', 'Bobick', 'French']
+>>>
+Example16: After his naval discharge , Langejans took a job at Meyer Music in Holland , where he was trained in the intricacies of instrument repair and electronics .
+TRFs set: ['songs', 'Friedrich', 'Harrison', 'song', 'French']
+
+--------------------------------------------------
+ANSWER   :  ['engine', 'Reading', 'train', 'track', 'coach']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'His reputation was that of an experienced engineer and a man of exceptionally high moral character , and not of a reckless or careless disposition .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: His reputation was that of an experienced engineer and a man of exceptionally high moral character , and not of a reckless or careless disposition .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  []
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Three others found that " the cause of the collision was the failure of Edward Farr , engineer of Train No. 23 , to give heed in time to the semaphore signals and crossing under the rules. .. the tower man , George F. Hauser , may have used poor judgment in his estimate of the distance away of the Atlantic City Railroad train when he gave the white boards to the West Jersey and Seashore Excursion Train No . 700 . "'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Person', 'Organization']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: When the operator set the " clear " signal on the Pennsylvania track , this would automatically set the " danger " signal on the Reading track , and vice versa . )
+TRFs set: ['station', 'Cary', 'hit', 'south', 'time']
+>>>
+Example2: The station was a stop on the Basingstoke and Alton Light Railway until its closure in 1932 .
+TRFs set: ['station', 'Bridgton', 'village', 'Milepost', 'Bobick']
+>>>
+Example3: County Coroner William McLaughlin , immediately upon hearing of the accident , went to the scene .
+TRFs set: ['Harrison', 'Cary', 'station', 'father', 'Lie']
+>>>
+Example4: The train services are operated by the Ffestiniog Railway Company .
+TRFs set: ['station', 'Institute', 'TraX', 'village', 'south']
+>>>
+Example5: The appearance of locomotive # 7 was permanently changed by replacement of a smaller number plate on the front of the boiler .
+TRFs set: ['station', 'Milepost', 'League', 'south', 'Bobick']
+>>>
+Example6: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+TRFs set: ['Maine', 'Milepost', 'Bridgton', 'station', 'Cary']
+>>>
+Example7: B&SR became a tourist attraction as the last 2-foot gauge railroad offering passenger service in the late 1930 's .
+TRFs set: ['station', 'SR', 'Milepost', 'south', 'Bobick']
+>>>
+Example8: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+TRFs set: ['Maine', 'station', 'south', 'village', 'Milepost']
+>>>
+Example9: Box cars # 56-58 had two small hinged doors on either side which could be opened as windows when transporting livestock .
+TRFs set: ['Bullock', 'TraX', 'station', 'Bobick', 'south']
+>>>
+Example10: The pole furthest from the tower on the Reading tracks was distant about 2,000 yards .
+TRFs set: ['Milepost', 'station', 'near', 'south', 'Bobick']
+>>>
+Example11: The successful design of the Bridgton Hinkleys was subsequently repeated for the Monson Railroad and the Franklin and Megantic Railway .
+TRFs set: ['Bridgton', 'Maine', 'Harrison', 'Milepost', 'Bullock']
+>>>
+Example12: In April 1999 , a homemade nail bomb exploded in the market , injuring 48 people , including a security guard who was trying to move disbelieving shoppers and a 14-year-old boy who picked the bomb up and carried it away from the crowds .
+TRFs set: ['hit', 'Kill', 'Player', 'players', 'Lotto']
+>>>
+Example13: This corner is reportedly named after a local character who had earned the nickname of Tarzan and only wanted to give up his vegetable garden in the dunes if the track 's designers named a nearby corner after him .
+TRFs set: ['village', 'Bobick', 'near', 'Cary', 'south']
+>>>
+Example14: Milepost 3 : Summit - highest point on the railroad .
+TRFs set: ['Milepost', 'station', 'Maine', 'south', 'MAAA']
+>>>
+Example15: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+TRFs set: ['MAAA', 'League', 'Bobick', 'Institute', 'players']
+>>>
+Example16: Stanley and cohorts were found liable for defamation and making death threats .
+TRFs set: ['Kill', 'Cary', 'Harrison', 'League', 'Lie']
+
+--------------------------------------------------
+ANSWER   :  ['Edward Farr', 'Train No. 23', 'George F. Hauser', 'Atlantic City Railroad', 'West Jersey and Seashore Excursion Train No. 700']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Three others found that " the cause of the collision was the failure of Edward Farr , engineer of Train No. 23 , to give heed in time to the semaphore signals and crossing under the rules. .. the tower man , George F. Hauser , may have used poor judgment in his estimate of the distance away of the Atlantic City Railroad train when he gave the white boards to the West Jersey and Seashore Excursion Train No . 700 . "'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Three others found that " the cause of the collision was the failure of Edward Farr , engineer of Train No. 23 , to give heed in time to the semaphore signals and crossing under the rules. .. the tower man , George F. Hauser , may have used poor judgment in his estimate of the distance away of the Atlantic City Railroad train when he gave the white boards to the West Jersey and Seashore Excursion Train No . 700 . "
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Edward Farr": "Person"}, {"Train No. 23": "Organization"}, {"George F. Hauser": "Person"}, {"Atlantic City Railroad": "Organization"}, {"West Jersey and Seashore Excursion Train No . 700": "Organization"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'They participated in the GMAC Bowl , losing to Tulsa 63-7 .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Organization', 'Location']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: Played defensive end for the Patriots in 1971 .
+TRFs set: ['Harrison', 'Player', 'League', 'Maine', 'father']
+>>>
+Example2: It was the 89th season of play for the Falcons .
+TRFs set: ['League', 'players', 'Player', 'Cary', 'south']
+>>>
+Example3: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+TRFs set: ['MAAA', 'League', 'Bobick', 'Institute', 'players']
+>>>
+Example4: MTV and ESPN thrived and gave rise to additional companion channels within a short time , while the CBS Cable channel folded after just over 14 months in operation .
+TRFs set: ['CBS', 'League', 'time', 'station', 'Cary']
+>>>
+Example5: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+TRFs set: ['French', 'Kill', 'south', 'Cary', 'Portuguese']
+>>>
+Example6: Benny Lee Boynton ( born December 6 , 1898 ) was an American football player .
+TRFs set: ['Player', 'players', 'League', 'Ben', 'Bobick']
+>>>
+Example7: His inherited runners to score was 20 percent which ranked fourth lowest in the American League .
+TRFs set: ['Player', 'Harrison', 'players', 'League', 'SR']
+>>>
+Example8: The next day , the regiment pursued the Confederate army and fought in a skirmish at Williamsport .
+TRFs set: ['Harrison', 'south', 'village', 'Cary', 'Lie']
+>>>
+Example9: Saturday Night Live made fun of Bobick by showing footage of his Nationally televised knockout loss , over and over again .
+TRFs set: ['Bobick', 'CBS', 'songs', 'Bullock', 'song']
+>>>
+Example10: Bobick 's first match was against Tommy Burns .
+TRFs set: ['Bobick', 'Bullock', 'Player', 'hit', 'players']
+>>>
+Example11: They performed their first gig in Galway in December 2006 .
+TRFs set: ['songs', 'song', 'hit', 'French', 'Maine']
+>>>
+Example12: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+TRFs set: ['songs', 'song', 'Cary', 'south', 'Harrison']
+>>>
+Example13: The south end features the lighted Bobby Morris Playfield .
+TRFs set: ['south', 'League', 'Hall', 'players', 'Player']
+>>>
+Example14: Flat cars # 2-13 were the largest flat cars on any 2-foot gauge railway in Maine .
+TRFs set: ['Maine', 'Milepost', 'Bridgton', 'station', 'Cary']
+>>>
+Example15: Played in what has been called " The Game of the Century " between # 1 Texas and # 2 Arkansas on December 6 , 1970 , with the Longhorns winning 15-14 .
+TRFs set: ['League', 'players', 'Player', 'University', 'time']
+>>>
+Example16: Approximately 16,000 full-time and 40,000 part-time students enroll each year , with over 100,000 alumni .
+TRFs set: ['University', 'Institute', 'League', 'south', 'players']
+
+--------------------------------------------------
+ANSWER   :  ['GMAC Bowl', 'Tulsa']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'They participated in the GMAC Bowl , losing to Tulsa 63-7 .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: They participated in the GMAC Bowl , losing to Tulsa 63-7 .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"GMAC Bowl": "Organization"}, {"Tulsa": "Location"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Overall , 53 lettermen are returning from the 2006 team ( 25 on offense , 28 on defense and 0 on special teams ) .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Miscellaneous']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: The battle had protracted itself till 13:00 , and among the French tirailleurs 4 were killed and 6 wounded , with 7,000 cartridges consummed .
+TRFs set: ['French', 'Kill', 'south', 'Cary', 'Portuguese']
+>>>
+Example2: Frazier himself was approaching retirement and focusing on upcoming paydays with protege Bobick .
+TRFs set: ['Bobick', 'Harrison', 'father', 'Bullock', 'Cary']
+>>>
+Example3: Approximately 16,000 full-time and 40,000 part-time students enroll each year , with over 100,000 alumni .
+TRFs set: ['University', 'Institute', 'League', 'south', 'players']
+>>>
+Example4: It was the 89th season of play for the Falcons .
+TRFs set: ['League', 'players', 'Player', 'Cary', 'south']
+>>>
+Example5: Played defensive end for the Patriots in 1971 .
+TRFs set: ['Harrison', 'Player', 'League', 'Maine', 'father']
+>>>
+Example6: He was also a regular for Victoria at interstate football , playing every year from 1932 to 1936 , the last as captain .
+TRFs set: ['Harrison', 'Player', 'League', 'players', 'father']
+>>>
+Example7: Played in what has been called " The Game of the Century " between # 1 Texas and # 2 Arkansas on December 6 , 1970 , with the Longhorns winning 15-14 .
+TRFs set: ['League', 'players', 'Player', 'University', 'time']
+>>>
+Example8: He was inducted to the Texas High School Sports Hall of Fame in 1995 .
+TRFs set: ['Player', 'University', 'League', 'Hall', 'Harrison']
+>>>
+Example9: The south end features the lighted Bobby Morris Playfield .
+TRFs set: ['south', 'League', 'Hall', 'players', 'Player']
+>>>
+Example10: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+TRFs set: ['south', 'Lotto', 'French', 'Harrison', 'League']
+>>>
+Example11: His excellent performance as a starter in the 2007 season has made him part of the new ' Big Three ' that include Dan Haren and Joe Blanton .
+TRFs set: ['Harrison', 'Player', 'League', 'players', 'Hall']
+>>>
+Example12: Bobick gained top-10 ranking in 1975 with eight more fights and wins , all again by KO .
+TRFs set: ['Bobick', 'Bullock', 'KO', 'hit', 'League']
+>>>
+Example13: Benny Lee Boynton ( born December 6 , 1898 ) was an American football player .
+TRFs set: ['Player', 'players', 'League', 'Ben', 'Bobick']
+>>>
+Example14: His inherited runners to score was 20 percent which ranked fourth lowest in the American League .
+TRFs set: ['Player', 'Harrison', 'players', 'League', 'SR']
+>>>
+Example15: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+TRFs set: ['Air', 'Institute', 'south', 'station', 'University']
+>>>
+Example16: Now , over 24 meetings , in addition to the Symposium , for between 200 and 500 scientists , are held annually .
+TRFs set: ['Institute', 'University', 'League', 'time', 'south']
+
+--------------------------------------------------
+ANSWER   :  ['lettermen', 'returning', 'team', 'offense', 'defense', 'special teams']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Overall , 53 lettermen are returning from the 2006 team ( 25 on offense , 28 on defense and 0 on special teams ) .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Overall , 53 lettermen are returning from the 2006 team ( 25 on offense , 28 on defense and 0 on special teams ) .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"2006": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : '30 Seconds to Mars ( or Thirty Seconds to Mars ) is an alternative rock band from Los Angeles , California , featuring Jared Leto , Shannon Leto , Tomo Milicevic .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Organization', 'Person', 'Location']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: In 1980 , Budjana started Squirrel , his first jazz band , with his schoolmates in Surabaya .
+TRFs set: ['Bobick', 'songs', 'song', 'University', 'Institute']
+>>>
+Example2: Oleg Mikhaylovich Gazmanov is a Russian singer .
+TRFs set: ['song', 'songs', 'Player', 'father', 'Bobick']
+>>>
+Example3: After working with small revolving door of guitarists ( as the band 's first two guitarists , Kevin Drake and Solon Bixler , left the band due to issues primarily related to touring ) , the three auditioned Tomo Miličević to round out the band 's roster .
+TRFs set: ['songs', 'song', 'players', 'Bobick', 'Player']
+>>>
+Example4: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+TRFs set: ['songs', 'CBS', 'University', 'song', 'hit']
+>>>
+Example5: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+TRFs set: ['songs', 'Cary', 'song', 'time', 'players']
+>>>
+Example6: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+TRFs set: ['songs', 'song', 'SR', 'French', 'Beautiful']
+>>>
+Example7: He is the lead guitarist and songwriter of the band Gigi .
+TRFs set: ['song', 'songs', 'Player', 'Bobick', 'father']
+>>>
+Example8: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+TRFs set: ['songs', 'song', 'SR', 'Cary', 'CBS']
+>>>
+Example9: The album cover 's artwork was provided by Mattias Noren .
+TRFs set: ['songs', 'song', 'Beautiful', 'Cary', 'Player']
+>>>
+Example10: According to an interview from Virgin Records , the band 's name
+TRFs set: ['songs', 'song', 'village', 'hit', 'CBS']
+>>>
+Example11: He is known to have a three-and-a-half octave range voice , and has performed with John Denver on the song " Let Us Begin ... "
+TRFs set: ['song', 'songs', 'Harrison', 'Cary', 'Player']
+>>>
+Example12: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+TRFs set: ['songs', 'song', 'Cary', 'French', 'south']
+>>>
+Example13: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+TRFs set: ['songs', 'song', 'Cary', 'south', 'Harrison']
+>>>
+Example14: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+TRFs set: ['songs', 'League', 'south', 'song', 'hit']
+>>>
+Example15: Carter began playing his first professional gigs when he was nine .
+TRFs set: ['songs', 'Cary', 'Carder', 'song', 'Player']
+>>>
+Example16: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+TRFs set: ['songs', 'father', 'song', 'Harrison', 'Cary']
+
+--------------------------------------------------
+ANSWER   :  ['Jared Leto', 'Shannon Leto', 'Tomo Milicevic', 'Los Angeles', 'California', 'band']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : '30 Seconds to Mars ( or Thirty Seconds to Mars ) is an alternative rock band from Los Angeles , California , featuring Jared Leto , Shannon Leto , Tomo Milicevic .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: 30 Seconds to Mars ( or Thirty Seconds to Mars ) is an alternative rock band from Los Angeles , California , featuring Jared Leto , Shannon Leto , Tomo Milicevic .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"30 Seconds to Mars": "Organization"}, {"Thirty Seconds to Mars": "Organization"}, {"Los Angeles": "Location"}, {"California": "Location"}, {"Jared Leto": "Person"}, {"Shannon Leto": "Person"}, {"Tomo Milicevic": "Person"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Their sophomore album , A Beautiful Lie , was released on August 30 , 2005 .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Miscellaneous']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: Darkness Death Doom is the sixth album by Runemagick .
+TRFs set: ['songs', 'song', 'Kill', 'Cary', 'Bobick']
+>>>
+Example2: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+TRFs set: ['songs', 'song', 'SR', 'Cary', 'CBS']
+>>>
+Example3: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+TRFs set: ['songs', 'father', 'song', 'Harrison', 'Cary']
+>>>
+Example4: The album 's title is an amalgamation of the words ' digital ' and ' analogue ' , two of the principal technologies that have been used in sound recording .
+TRFs set: ['songs', 'song', 'time', 'French', 'Institute']
+>>>
+Example5: They performed their first gig in Galway in December 2006 .
+TRFs set: ['songs', 'song', 'hit', 'French', 'Maine']
+>>>
+Example6: According to an interview from Virgin Records , the band 's name
+TRFs set: ['songs', 'song', 'village', 'hit', 'CBS']
+>>>
+Example7: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+TRFs set: ['songs', 'League', 'south', 'song', 'hit']
+>>>
+Example8: It spawned the French hit singles " Chaque fois " and " J'ai confiance en toi " .
+TRFs set: ['French', 'songs', 'song', 'hit', 'Citrone']
+>>>
+Example9: The album cover 's artwork was provided by Mattias Noren .
+TRFs set: ['songs', 'song', 'Beautiful', 'Cary', 'Player']
+>>>
+Example10: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+TRFs set: ['songs', 'CBS', 'University', 'song', 'hit']
+>>>
+Example11: He is the lead guitarist and songwriter of the band Gigi .
+TRFs set: ['song', 'songs', 'Player', 'Bobick', 'father']
+>>>
+Example12: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+TRFs set: ['south', 'Lotto', 'French', 'Harrison', 'League']
+>>>
+Example13: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+TRFs set: ['songs', 'song', 'SR', 'French', 'Beautiful']
+>>>
+Example14: He has one daughter , Angelina , born in December 2004 .
+TRFs set: ['Angela', 'father', 'Harrison', 'Cary', 'Beautiful']
+>>>
+Example15: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+TRFs set: ['songs', 'song', 'Cary', 'French', 'south']
+>>>
+Example16: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+TRFs set: ['songs', 'song', 'Cary', 'south', 'Harrison']
+
+--------------------------------------------------
+ANSWER   :  ['album', 'released', 'August', '30', '2005']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'Their sophomore album , A Beautiful Lie , was released on August 30 , 2005 .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: Their sophomore album , A Beautiful Lie , was released on August 30 , 2005 .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"A Beautiful Lie": "Miscellaneous"}, {"August 30 , 2005": "Miscellaneous"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The second nomination was for Best Rock Video ; however , they lost to AFI 's " Miss Murder " .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Organization']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: He is the lead guitarist and songwriter of the band Gigi .
+TRFs set: ['song', 'songs', 'Player', 'Bobick', 'father']
+>>>
+Example2: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+TRFs set: ['songs', 'song', 'Cary', 'French', 'south']
+>>>
+Example3: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+TRFs set: ['songs', 'song', 'SR', 'Cary', 'CBS']
+>>>
+Example4: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+TRFs set: ['songs', 'father', 'song', 'Harrison', 'Cary']
+>>>
+Example5: They performed their first gig in Galway in December 2006 .
+TRFs set: ['songs', 'song', 'hit', 'French', 'Maine']
+>>>
+Example6: Bobick 's first match was against Tommy Burns .
+TRFs set: ['Bobick', 'Bullock', 'Player', 'hit', 'players']
+>>>
+Example7: According to an interview from Virgin Records , the band 's name
+TRFs set: ['songs', 'song', 'village', 'hit', 'CBS']
+>>>
+Example8: The album cover 's artwork was provided by Mattias Noren .
+TRFs set: ['songs', 'song', 'Beautiful', 'Cary', 'Player']
+>>>
+Example9: Saturday Night Live made fun of Bobick by showing footage of his Nationally televised knockout loss , over and over again .
+TRFs set: ['Bobick', 'CBS', 'songs', 'Bullock', 'song']
+>>>
+Example10: The second cancer went into remission .
+TRFs set: ['Cary', 'hit', 'Lie', 'Beautiful', 'SR']
+>>>
+Example11: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+TRFs set: ['songs', 'song', 'Cary', 'south', 'Harrison']
+>>>
+Example12: New script editor Eric Saward requested that Bailey devise another story idea , but neither the submitted outlines for May Time ( later renamed Manwatch ) nor The Children of Seth were taken further .
+TRFs set: ['Cary', 'Bobick', 'CBS', 'songs', 'song']
+>>>
+Example13: He died in Hollywood , California .
+TRFs set: ['Harrison', 'father', 'Kill', 'south', 'Cary']
+>>>
+Example14: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+TRFs set: ['songs', 'CBS', 'University', 'song', 'hit']
+>>>
+Example15: At the CIA fair , Hayley gets into an argument with Director Avery Bullock .
+TRFs set: ['Bullock', 'Cary', 'Angela', 'Harrison', 'Lie']
+>>>
+Example16: It spawned the French hit singles " Chaque fois " and " J'ai confiance en toi " .
+TRFs set: ['French', 'songs', 'song', 'hit', 'Citrone']
+
+--------------------------------------------------
+ANSWER   :  ['AFI', 'Miss Murder']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'The second nomination was for Best Rock Video ; however , they lost to AFI 's " Miss Murder " .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: The second nomination was for Best Rock Video ; however , they lost to AFI 's " Miss Murder " .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"AFI": "Organization"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : '" Jared and Shannon put together this thing called Environmentor which is illustrating ways --- alternatives --- to kind of clean up some of the mess we leave behind .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Person', 'Organization']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+TRFs set: ['songs', 'father', 'song', 'Harrison', 'Cary']
+>>>
+Example2: Behe has stated that the results of the paper support his notion of irreducible complexity , based on the calculation of the probability of mutations required for evolution to succeed .
+TRFs set: ['Harrison', 'Cary', 'time', 'Bobick', 'hit']
+>>>
+Example3: For a while Ilona lives in harmony with both men .
+TRFs set: ['Angela', 'Lie', 'Bobick', 'father', 'Harrison']
+>>>
+Example4: New script editor Eric Saward requested that Bailey devise another story idea , but neither the submitted outlines for May Time ( later renamed Manwatch ) nor The Children of Seth were taken further .
+TRFs set: ['Cary', 'Bobick', 'CBS', 'songs', 'song']
+>>>
+Example5: The album 's title is an amalgamation of the words ' digital ' and ' analogue ' , two of the principal technologies that have been used in sound recording .
+TRFs set: ['songs', 'song', 'time', 'French', 'Institute']
+>>>
+Example6: The album cover 's artwork was provided by Mattias Noren .
+TRFs set: ['songs', 'song', 'Beautiful', 'Cary', 'Player']
+>>>
+Example7: Steve and Roger begin making prank calls to the world leaders , but then they all * 69 the two .
+TRFs set: ['Lie', 'Bobick', 'CBS', 'SR', 'Kill']
+>>>
+Example8: This corner is reportedly named after a local character who had earned the nickname of Tarzan and only wanted to give up his vegetable garden in the dunes if the track 's designers named a nearby corner after him .
+TRFs set: ['village', 'Bobick', 'near', 'Cary', 'south']
+>>>
+Example9: " I just thought , ' You fools , this is what we do ' , " says Ben Player , one of only two pro riders who voted to compete .
+TRFs set: ['players', 'Player', 'Lie', 'League', 'Carder']
+>>>
+Example10: For example , " Fallen " was previously called " Jupiter " , and " Year Zero " was previously called " Hero " .
+TRFs set: ['father', 'songs', 'Harrison', 'Player', 'song']
+>>>
+Example11: They believe that the world is run by a secret society of Jews .
+TRFs set: ['Institute', 'Lie', 'Bobick', 'French', 'League']
+>>>
+Example12: In 2004 he co-wrote a controversial paper with prominent intelligent design proponent Michael Behe .
+TRFs set: ['Harrison', 'father', 'Cary', 'University', 'Institute']
+>>>
+Example13: Dorothea was the common link or nexus among them all .
+TRFs set: ['Angela', 'father', 'Cary', 'Harrison', 'Bridgton']
+>>>
+Example14: After that show , Carter 's father bought his son a tin drum set with paper heads since Carter showed much interest in learning the instrument .
+TRFs set: ['father', 'Cary', 'songs', 'song', 'Harrison']
+>>>
+Example15: Player pinpoints Mike Stewart -- the undisputed guru of bodyboarding who had pioneered the sport -- for kick-starting an era of self-reliance and self-belief , backed by his call to " support those who support bodyboarding " .
+TRFs set: ['Player', 'father', 'players', 'Bobick', 'Harrison']
+>>>
+Example16: Another Nobel laureate scientist there was Richard J. Roberts .
+TRFs set: ['Harrison', 'University', 'Cary', 'Institute', 'Friedrich']
+
+--------------------------------------------------
+ANSWER   :  ['Jared', 'Shannon', 'Environmentor']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : '" Jared and Shannon put together this thing called Environmentor which is illustrating ways --- alternatives --- to kind of clean up some of the mess we leave behind .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: " Jared and Shannon put together this thing called Environmentor which is illustrating ways --- alternatives --- to kind of clean up some of the mess we leave behind .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Jared": "Person"}, {"Shannon": "Person"}, {"Environmentor": "Organization"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'They are also scheduled to play Roskilde , Rock am Ring , Pinkpop , Give It A Name Festival and Download .'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Location']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: Prior to 2001 , the event was held in Kuala Lumpur .
+TRFs set: ['located', 'University', 'Institute', 'south', 'League']
+>>>
+Example2: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+TRFs set: ['songs', 'song', 'SR', 'Cary', 'CBS']
+>>>
+Example3: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+TRFs set: ['songs', 'song', 'Cary', 'French', 'south']
+>>>
+Example4: The 2007 event is being held from September 10 till September 16 .
+TRFs set: ['time', 'League', 'University', 'Lotto', 'KO']
+>>>
+Example5: The album cover 's artwork was provided by Mattias Noren .
+TRFs set: ['songs', 'song', 'Beautiful', 'Cary', 'Player']
+>>>
+Example6: According to an interview from Virgin Records , the band 's name
+TRFs set: ['songs', 'song', 'village', 'hit', 'CBS']
+>>>
+Example7: Dark Room Notes are a four-piece electro / synthpop band based in Dublin , Ireland .
+TRFs set: ['songs', 'song', 'SR', 'French', 'Beautiful']
+>>>
+Example8: He is the lead guitarist and songwriter of the band Gigi .
+TRFs set: ['song', 'songs', 'Player', 'Bobick', 'father']
+>>>
+Example9: They performed their first gig in Galway in December 2006 .
+TRFs set: ['songs', 'song', 'hit', 'French', 'Maine']
+>>>
+Example10: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+TRFs set: ['songs', 'Cary', 'song', 'time', 'players']
+>>>
+Example11: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+TRFs set: ['songs', 'CBS', 'University', 'song', 'hit']
+>>>
+Example12: As a young pianist , he toured Europe performing in many capitals .
+TRFs set: ['songs', 'French', 'song', 'Friedrich', 'father']
+>>>
+Example13: Circuit Park Zandvoort played host to the first race in the 2006/07 season of A1 Grand Prix from 29 September - 1 October 2006 .
+TRFs set: ['Lotto', 'League', 'Bobick', 'station', 'Hall']
+>>>
+Example14: To fully appreciate the importance of this cultural scene , see the entries for Moses Mendelssohn , Gotthold Ephraim Lessing , Friedrich Schlegel , Germaine de Staë , Felix Mendelssohn , Ludwi Tieck , Novalis , and others .
+TRFs set: ['Friedrich', 'songs', 'French', 'song', 'League']
+>>>
+Example15: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+TRFs set: ['songs', 'League', 'south', 'song', 'hit']
+>>>
+Example16: Darkness Death Doom is the sixth album by Runemagick .
+TRFs set: ['songs', 'song', 'Kill', 'Cary', 'Bobick']
+
+--------------------------------------------------
+ANSWER   :  ['Roskilde', 'Rock am Ring', 'Pinkpop', 'Give It A Name Festival', 'Download']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'They are also scheduled to play Roskilde , Rock am Ring , Pinkpop , Give It A Name Festival and Download .'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: They are also scheduled to play Roskilde , Rock am Ring , Pinkpop , Give It A Name Festival and Download .
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Roskilde": "Location"}, {"Rock am Ring": "Location"}, {"Pinkpop": "Location"}, {"Give It A Name Festival": "Organization"}, {"Download": "Organization"}]
+==================================================
+
+
+
+
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'On August 8th , 2007 , Kerrang ! announced that 30 Seconds to Mars has been nominated for two categories of the Kerrang !'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
+
+--------------------------------------------------
+ANSWER   :  ['Organization', 'Person']
+--------------------------------------------------
+QUESTION :  Here provide some example sentences and the corresponding TRFs. TRFs means Type Related Features, which are tokens that are strongly associated with the entity types within these sentences.
+Please identify the TRFs in the target sentences.
+Provide answer in the following list format: ['TRF_1','TRF_2',...]
+>>>
+Example1: He has one daughter , Angelina , born in December 2004 .
+TRFs set: ['Angela', 'father', 'Harrison', 'Cary', 'Beautiful']
+>>>
+Example2: The circuit was inaugurated on August , 7 , 1948 .
+TRFs set: ['Institute', 'station', 'village', 'University', 'CBS']
+>>>
+Example3: The 2007 event is being held from September 10 till September 16 .
+TRFs set: ['time', 'League', 'University', 'Lotto', 'KO']
+>>>
+Example4: Things began to speed up quickly , and Matt Wachter later joined the band as bassist and keyboard player .
+TRFs set: ['songs', 'Cary', 'song', 'time', 'players']
+>>>
+Example5: According to an interview from Virgin Records , the band 's name
+TRFs set: ['songs', 'song', 'village', 'hit', 'CBS']
+>>>
+Example6: In addition to a number of original songs , the album includes a cover of Siouxsie 's Cities in Dust .
+TRFs set: ['songs', 'song', 'Cary', 'French', 'south']
+>>>
+Example7: The album cover 's artwork was provided by Mattias Noren .
+TRFs set: ['songs', 'song', 'Beautiful', 'Cary', 'Player']
+>>>
+Example8: They were supported on this tour by Head Automatica , The Receiving End of Sirens , Cobra Starship , and several other bands including Street Drum Corps .
+TRFs set: ['songs', 'song', 'Cary', 'south', 'Harrison']
+>>>
+Example9: The album was produced by Josh Abraham , whose producing credits also include Orgy , Velvet Revolver , and Linkin Park .
+TRFs set: ['songs', 'song', 'SR', 'Cary', 'CBS']
+>>>
+Example10: They performed their first gig in Galway in December 2006 .
+TRFs set: ['songs', 'song', 'hit', 'French', 'Maine']
+>>>
+Example11: Prior to 2001 , the event was held in Kuala Lumpur .
+TRFs set: ['located', 'University', 'Institute', 'south', 'League']
+>>>
+Example12: At the last elections , 21 february 2005 , the alliance won 38.9 % of popular votes and 4 out of 7 elected seats .
+TRFs set: ['south', 'Lotto', 'French', 'Harrison', 'League']
+>>>
+Example13: As of Spring 2007 , the band is supporting The Used as a part of the " Taste of Chaos " tour and have scheduled a string of dates in Europe supporting Linkin Park .
+TRFs set: ['songs', 'League', 'south', 'song', 'hit']
+>>>
+Example14: In October , the band began their " Welcome to the Universe " tour , sponsored by MTV2 .
+TRFs set: ['songs', 'CBS', 'University', 'song', 'hit']
+>>>
+Example15: He is the lead guitarist and songwriter of the band Gigi .
+TRFs set: ['song', 'songs', 'Player', 'Bobick', 'father']
+>>>
+Example16: Created in 1998 by Jared Leto and his brother , Shannon , 30 Seconds to Mars began as a small family project .
+TRFs set: ['songs', 'father', 'song', 'Harrison', 'Cary']
+
+--------------------------------------------------
+ANSWER   :  ['Kerrang', '30 Seconds to Mars', 'nominated', 'categories']
+--------------------------------------------------
+QUESTION :  Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'On August 8th , 2007 , Kerrang ! announced that 30 Seconds to Mars has been nominated for two categories of the Kerrang !'
+Consider the above TRFs, recognize the named entities for the target sentence.
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
+
+Sentence: On August 8th , 2007 , Kerrang ! announced that 30 Seconds to Mars has been nominated for two categories of the Kerrang !
+Answer:
+
+--------------------------------------------------
+ANSWER   :  [{"Kerrang": "Organization"}, {"30 Seconds to Mars": "Organization"}]
+==================================================
+
+
+
+
+

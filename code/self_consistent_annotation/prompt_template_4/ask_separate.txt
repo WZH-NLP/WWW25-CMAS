@@ -1,0 +1,2 @@
+According to the target sentence, please identify the entity whose label is "<ner_type>"
+Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []

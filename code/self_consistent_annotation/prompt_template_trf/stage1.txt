@@ -1,0 +1,4 @@
+Given entity label set: <ner_list> and target sentence : '<target_sentence>'
+What entity types may be included in this sentence?
+If not present, answer: None.
+Respond as a list, e.g. ['entity type 1', 'entity type 2', .....]
