@@ -1,4 +1,0 @@
-Given entity label set: <ner_list> and target sentence : '<target_sentence>'
-Consider the above helpfulness scores, recognize the named entities for the target sentence.
-Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
-

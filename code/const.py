@@ -23,9 +23,8 @@ dataset_language_map = {
 }
 
 my_openai_api_keys = [
-    {"key": "": True,
-     "api_base": ""},
-    {"key": "": True,
-     "api_base": ""},
-
+    {"key": "<api-key>", "set_base": True,
+     "api_base": "<base-url>"},
+    {"key": "<api-key>", "set_base": True,
+     "api_base": "<base-url>"},
 ]

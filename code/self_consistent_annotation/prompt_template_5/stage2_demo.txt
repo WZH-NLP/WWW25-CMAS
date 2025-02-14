@@ -1,3 +1,0 @@
-<split_signal>
-Example<sentence_id>: <sentence_str>
-Label: <label_str>

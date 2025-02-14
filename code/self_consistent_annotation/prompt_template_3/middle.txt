@@ -1,7 +1,0 @@
-"""
-List all the entities in the following sentence as instances of corresponding subclasses of class Entity. If there do not exist any entities that belong to the Entity subclasses we defined, output "None".
-<-sentence->
-"""
-<-entity-labels->
-# No other entities belong to predefined Entity subclasses in this sentence.
-

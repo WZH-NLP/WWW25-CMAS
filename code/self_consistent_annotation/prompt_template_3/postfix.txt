@@ -1,5 +1,0 @@
-"""
-Using the provided examples as guidance and considering their helpfulness, list all the entities in target_sentence as instances of corresponding subclasses of class Entity. If there do not exist any Entity words that belong to the Entity subclasses we defined, output "None".
-target_sentence = "<-target-sentence->"
-"""
-

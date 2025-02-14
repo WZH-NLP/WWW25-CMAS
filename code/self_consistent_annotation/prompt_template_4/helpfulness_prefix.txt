@@ -1,3 +1,0 @@
-Here provide some examples and the corresponding entity labels.
-Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current example can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
-Provide answer in the following JSON format: [{"Example id": "helpfulness score"},{"Reason id": "reasons"}]

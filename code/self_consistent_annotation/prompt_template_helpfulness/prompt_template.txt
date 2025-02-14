@@ -1,0 +1,36 @@
+Given entity label set: ['Organization', 'Person', 'Location', 'Miscellaneous'] and target sentence : 'During this time Couch 's Division was detached from the Army and was occupied with guarding the fords on the Potomac .'
+What entity types may be included in this sentence?
+If not present, answer: none.
+Respond as a list, e.g. ['entity type1', 'entity type2', .....]
+
+
+Here provide some sentences and the corresponding entity labels.
+Based on the entity types in the target sentence, please predict the helpfulness scores and give reasons of each sentence, which indicates the degree to which providing the current sentence can aid in extracting named entities from the target_sentence. The score ranges from 1 to 5, with 1 being the least helpful and 5 being the most helpful.
+Provide answer in the following JSON format: [{"Sentence id": "helpfulness score"},{"Reason id": "reasons"}]
+>>>
+Sentence1: The operation moved from Barrack Street to 340 Hay Street just after the purchase by the VBN in 1963 .
+Label: [{'Barrack Street': 'Location'}, {'340 Hay Street': 'Location'}, {'VBN': 'Organization'}]
+>>>
+Sentence2: Inexplicably , the hockey club reversed its position , and the next few months saw a gradual schism between the MAAA and the club .
+Label: [{'MAAA': 'Organization'}]
+>>>
+Sentence3: Throughout the spring and into early summer of 1864 , the 139th fought in Grant 's Overland Campaign and the early stages of the Siege of Petersburg .
+Label: [{'Grant': 'Person'}, {'Overland Campaign': 'Miscellaneous'}, {'Siege of Petersburg': 'Miscellaneous'}]
+>>>
+Sentence4: The 139th was transferred in October 1862 to the VI Corps .
+Label: [{'VI Corps': 'Organization'}]
+>>>
+Sentence5: By December 1864 , they were back in the siege lines of Petersburg .
+Label: [{'Petersburg': 'Location'}]
+>>>
+Sentence6: The 65th Air Division directed base construction , and the establishment of off base housing and radar sites .
+Label: [{'65th Air Division': 'Organization'}]
+>>>
+Sentence7: The rolling stock was moved to Massachusetts for another half-century of operation on the Edaville Railroad after the war .
+Label: [{'Massachusetts': 'Location'}, {'Edaville Railroad': 'Organization'}]
+>>>
+Sentence8: Fourth Air Force , 27 March 1943 ; Army Service Forces , 6 May 1943 ; Eighth Air Force , 2 June 1943 ; VIII Fighter Command , 4 June 1943 ; 2 Bombardment ( later , 2 Air ) Division , 15 September 1944 ; 3 Air Division , 1 June 1945 -- 21 November 1945 .
+Label: [{'Fourth Air Force': 'Organization'}, {'Army Service Forces': 'Organization'}, {'Eighth Air Force': 'Organization'}, {'VIII Fighter Command': 'Organization'}, {'2 Bombardment ( later , 2 Air ) Division': 'Organization'}, {'3 Air Division': 'Organization'}]
+
+
+Consider the above examples and their helpfulness scores, recognize the named entities for the target sentence. Provide answer in the following JSON format: [{\"Entity Name\": \"Entity Label\"}]. If there is no entity in the text, return the following empty list: []
