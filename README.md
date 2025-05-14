@@ -3,6 +3,7 @@
 Source code for our paper accepted at the ACM WWW conference: [A Cooperative Multi-Agent Framework for Zero-Shot Named Entity Recognition](https://dl.acm.org/doi/pdf/10.1145/3696410.3714923). Our implementation is base on [Self-Improving for Zero-Shot Named Entity Recognition with Large Language Models](https://github.com/Emma1066/Self-Improve-Zero-Shot-NER). 
 
 ## Introduction
+Inspired by the demonstrated complex problem-solving capabilities of multi-agent approaches, in this paper, we present a framework, named the <u>C</u>ooperative <u>M</u>ulti-<u>A</u>gent <u>S</u>ystem (CMAS) for zero-shot NER, harnessing the collective intelligence of LLM-based agents.
 
 ## Prepare the data
 See data/README.md
