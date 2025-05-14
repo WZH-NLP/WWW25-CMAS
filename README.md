@@ -7,7 +7,7 @@ Inspired by the demonstrated complex problem-solving capabilities of multi-agent
 
 ![image](framework.png)
 
-We aim to address two challenging problems:
+CMAS aims to address two challenging problems:
 
 - Challenge 1: Overlooking correlations between contexts surrounding entities.
 - Challenge 2: Indiscriminate use of task demonstrations.
@@ -17,16 +17,16 @@ To tackle the first issue, we propose redefining the traditional NER task into t
 ## Prepare the data
 1. See data/README.md
 
-2. Run the followings commands to Extract trf and embedding
+2. Run the followings commands to Extract trf and embedding:
 ```shell
 python extract_trf.py --dataset_name <dataset_name>
 python get_trf_embd.py
 ```
 
 ## Run
-### 1. Set your <api-key> and <base-url> in code/const.py
+1. Set your <api-key> and <base-url> in code/const.py
 
-### 2. Run the followings commands
+2. Run the followings commands:
 
 ```shell
 # Self-annotator for unlabelled data
@@ -41,3 +41,22 @@ sh scripts/wikigold_3_test_inference_trf.sh
 sh scripts/wikigold_3_test_get_results.sh
 ```
 
+## Citations
+```
+@inproceedings{wang2025cooperative,
+  title={A cooperative multi-agent framework for zero-shot named entity recognition},
+  author={Wang, Zihan and Zhao, Ziqi and Lyu, Yougang and Chen, Zhumin and de Rijke, Maarten and Ren, Zhaochun},
+  booktitle={Proceedings of the ACM on Web Conference 2025},
+  pages={4183--4195},
+  year={2025}
+}
+
+@inproceedings{wang2023generalizing,
+  title={Generalizing Few-Shot Named Entity Recognizers to Unseen Domains with Type-Related Features},
+  author={Wang, Zihan and Zhao, Ziqi and Chen, Zhumin and Ren, Pengjie and de Rijke, Maarten and Ren, Zhaochun},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2023},
+  pages={2228--2240},
+  year={2023}
+}
+
+```
