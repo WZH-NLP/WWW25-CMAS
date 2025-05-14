@@ -5,10 +5,19 @@ Source code for our paper accepted at the ACM WWW conference: [A Cooperative Mul
 ## Introduction
 Inspired by the demonstrated complex problem-solving capabilities of multi-agent approaches, in this paper, we present a framework, named the <ins>C</ins>ooperative <ins>M</ins>ulti-<ins>A</ins>gent <ins>S</ins>ystem (CMAS) for zero-shot NER, harnessing the collective intelligence of LLM-based agents.
 
-## Prepare the data
-See data/README.md
+![image](framework.png)
 
-Run the followings commands to Extract trf and embedding
+We aim to address two challenging problems:
+
+- Challenge 1: Overlooking correlations between contexts surrounding entities.
+- Challenge 2: Indiscriminate use of task demonstrations.
+
+To tackle the first issue, we propose redefining the traditional NER task into two subtasks: recognizing named entities and identifying entity type-related features (TRFs, i.e., tokens strongly associated with entity types). To address the second problem, we incorporate a self-reflection mechanism, enabling LLMs to reflect on the helpfulness of retrieved demonstrations and selectively learn from them.
+ 
+## Prepare the data
+1. See data/README.md
+
+2. Run the followings commands to Extract trf and embedding
 ```shell
 python extract_trf.py --dataset_name <dataset_name>
 python get_trf_embd.py
